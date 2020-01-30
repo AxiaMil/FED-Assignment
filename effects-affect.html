@@ -1,0 +1,429 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>How smoking affects you</title>
+    <meta name="author" content="Lim Kai Xian">
+    <meta charset="utf-8" name="description" content="Effects of Smoking">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="js/include.js"></script>
+    <link href="css/effects.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/effects-affect.css">
+    <link href="https://fonts.googleapis.com/css?family=Alata|Anton|Poppins|Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/9c3fdd9015.js" crossorigin="anonymous"></script>
+    <script src="js/effects-affect.js"></script>
+    <link href="css/footer.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="design">
+        <div class="container-fluid container-custom-header" id="top">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div w3-include-html="header.html"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-8 col-sm-12 container-custom">
+                    <h2 class="Website-Heading">How smoking affects you</h2>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="custom-nav-menu">
+        <ul class="ul nav-menu">
+            <li><a href="#card"><span class="icon-color"><i class="fas fa-smoking fa-gradient"></i></span></a></li>
+            <li><a href="#details"><span class="icon-color"><i class="fas fa-skull-crossbones fa-gradient"></i></span></a></li>
+            <li><a href="#form"><span class="icon-color"><i class="fas fa-pencil-alt fa-gradient"></i></span></a></li>
+            <li id="bottom"><a href="#top"><span class="icon-color"><i class="fas fa-chevron-up fa-gradient"></i></span></a></li>
+
+        </ul>
+    </div>
+    <!-- Start of content -->
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+                <div class="card card-custom" id="card" style="max-width:1000px">
+                    <section>
+                        <div class="carousel slide container" id="featured" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#featured" data-slide-to="0" class="active"></li>
+                                <li data-target="#featured" data-slide-to="1"></li>
+                                <li data-target="#featured" data-slide-to="2"></li>
+                                <li data-target="#featured" data-slide-to="3"></li>
+                                <li data-target="#featured" data-slide-to="4"></li>
+                                <li data-target="#featured" data-slide-to="5"></li>
+                                <li data-target="#featured" data-slide-to="6"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <a href="#LungDamage" onclick="setTimeout(openDetails('LungDamage'), 3000)"><img class="img-custom-fluid" src="images/Lung.jpg" alt="Alternate Text" /></a>
+                                    <div class="carousel-caption d-none d-block carousel-caption-custom">
+                                        <div class="item-wrap"><h3>Lung Damage</h3></div>
+                                        <p class="carousel-description-custom">
+                                            Smoking cigarettes affects lung health because a person breathes in not only nicotine but also a variety of additional chemicals.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <a href="#HeartDisease" onclick="setTimeout(openDetails('HeartDisease'), 3000)"><img class="img-custom-fluid" src="images/Heart.jpg" alt="Alternate Text" /></a>
+                                    <div class="carousel-caption d-none d-block carousel-caption-custom">
+                                        <div class="item-wrap"><h3>Heart Disease</h3></div>
+                                        <p class="carousel-description-custom">
+                                            Smoking cigarettes can damage the heart, blood vessels, and blood cells.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <a href="#Diabetes" onclick="setTimeout(openDetails('Diabetes'), 3000)"><img class="img-custom-fluid" src="images/Diabetes.jpg" alt="Alternate Text" /></a>
+                                    <div class="carousel-caption d-none d-block carousel-caption-custom">
+                                        <div class="item-wrap"><h3>Risk of Type 2 Diabetes</h3></div>
+                                        <p class="carousel-description-custom">
+                                            The CDC report that people who smoke regularly have a 30–40 percent higher risk of developing type 2 diabetes than those who do not.
+
+                                            Smoking can also make it more difficult for people with diabetes to manage their condition.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <a href="#ImmuneSystem" onclick="setTimeout(openDetails('ImmuneSystem'), 3000)"><img class="img-custom-fluid" src="images/ImmuneSystem.jpg" alt="Alternate Text" /></a>
+                                    <div class="carousel-caption d-none d-block carousel-caption-custom">
+                                        <div class="item-wrap"><h3>Weak Immune System</h3></div>
+                                        <p class="carousel-description-custom">
+                                            Smoking cigarettes can weaken a person's immune system, making them more susceptible to illness.
+
+                                            It can also cause additional inflammation in the body.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <a href="#Vision" onclick="setTimeout(openDetails('Vision'), 3000)"><img class="img-custom-fluid" src="images/Vision.jpg" alt="Alternate Text" /></a>
+                                    <div class="carousel-caption d-none d-block carousel-caption-custom">
+                                        <div class="item-wrap"><h3>Vision Problem</h3></div>
+                                        <p class="carousel-description-custom">
+                                            Smoking cigarettes can cause eye problems, including a greater risk of cataracts and age-related macular degeneration.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <a href="#Oral" onclick="setTimeout(openDetails('Oral'), 3000)"><img class="img-custom-fluid" src="images/oral.jpg" alt="Alternate Text" /></a>
+                                    <div class="carousel-caption d-none d-block carousel-caption-custom">
+                                        <div class="item-wrap"><h3>Poor Oral Hygiene</h3></div>
+                                        <p class="carousel-description-custom">
+                                            People who smoke have double the risk of gum disease. This risk increases with the number of cigarettes a person smokes.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <a href="#Fertility" onclick="setTimeout(openDetails('Fertility'), 3000)"><img class="img-custom-fluid" src="images/Fertility.jpg" alt="Alternate Text" /></a>
+                                    <div class="carousel-caption d-none d-block carousel-caption-custom">
+                                        <div class="item-wrap"><h3>Fertility Problem</h3></div>
+                                        <p class="carousel-description-custom">
+                                            It's no secret that smoking is detrimental to your health, so it should be no surprise that smoking can affect your fertility.
+                                            However, for many women, it apparently is surprising.
+                                        </p>
+                                    </div>
+                                </div>
+                                <a class="carousel-control-prev" href="#featured" role="button" data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="carousel-control-next" href="#featured" role="button" data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div>
+                        </div>
+                    </section>
+                    <div class="card-body">
+                        <h2 class="card-title Title-Heading">The Effects of Smoking on the Body</h2>
+                        <p class="card-text" style="font-family: 'Poppins', sans-serif;">
+                            No matter how you smoke it, tobacco is dangerous to your health. There are no safe substances in any tobacco products,
+                            from acetone and tar to nicotine and carbon monoxide. The substances you inhale don’t just affect your lungs. They can affect your entire body.
+                        </p>
+                        <p class="card-text" style="font-family: 'Poppins', sans-serif;">
+                            Smoking can lead to a variety of ongoing complications in the body, as well as long-term effects on your body systems.
+                            While smoking can increase your risk of a variety of problems over several years, some of the bodily effects are immediate.
+                            Learn more about the symptoms and overall effects of smoking on the body below.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+                <div class="Damage-Details" id="details">
+                    <h2 class="Title-Heading"> Details on the Damage That can be caused</h2>
+                    <details id="LungDamage">
+                        <summary class="Title-Heading Title-Heading-custom">Lung Damage</summary>
+                        <div class="text-custom-background">
+                            <p class="text-custom">
+                                Cigarettes are responsible for a substantial increase in the risk of developing lung cancer. This risk is 25 times greater for men and 25.7 times greater for women.
+                                The CDC report that roughly 9 out of 10 lung cancer deaths is linked to smoking.
+                                Smoking cigarettes also presents a greater risk of developing and dying from chronic obstructive pulmonary disorder (COPD). In fact, the American Lung Association report that smoking causes 80 percent of COPD deaths.
+                                Cigarettes are also linked to developing emphysema and chronic bronchitis. They can also trigger or exacerbate an asthma attack.
+                            </p>
+                            <a href="https://www.medicalnewstoday.com/articles/324644.php#vision-problems">Click Here For More</a>
+                        </div>
+                    </details>
+                    <details id="HeartDisease">
+                        <summary class="Title-Heading Title-Heading-custom">Heart Disease</summary>
+                        <div class="text-custom-background">
+                            <p class="text-custom">
+                                The chemicals and tar in cigarettes can increase a person's risk of atherosclerosis, which is the buildup of plaque in the blood vessels. This buildup limits blood flow and can lead to dangerous blockages.
+                                Smoking also increases the risk of peripheral artery disease (PAD), which occurs when the arteries to the arms and legs start to narrow, restricting blood flow.
+                                Research shows a direct link between smoking and developing PAD. Even those who used to smoke face a higher risk than people who never smoked.
+                            </p>
+                            <p class="text-custom-para">Having PAD increases the risk of experiencing:</p>
+                            <ul class="Damage-Details-List">
+                                <li>Blood clots</li>
+                                <li>angina, or chest pain</li>
+                                <li>a stroke</li>
+                                <li>a heart attack</li>
+                            </ul>
+                            <a href="https://www.medicalnewstoday.com/articles/324644.php#vision-problems">Click Here For More</a>
+                        </div>
+                    </details>
+                    <details id="Diabetes">
+                        <summary class="Title-Heading Title-Heading-custom">Risk of Type 2 Diabetes</summary>
+                        <div class="text-custom-background">
+                            <p class="text-custom">
+                                People with diabetes who smoke are more likely than nonsmokers to have trouble with insulin dosing and
+                                with controlling their disease. The more cigarettes you smoke, the higher your risk for type 2 diabetes.
+                                No matter what type of diabetes you have, smoking makes your diabetes harder to control. If you have diabetes
+                                and you smoke, you are more likely to have serious health problems from diabetes.
+                            </p>
+                            <p class="text-custom-para">Smokers with diabetes have higher risks for serious complications, including:</p>
+                            <ul class="Damage-Details-List">
+                                <li>Heart and kidney disease</li>
+                                <li>Poor blood flow in the legs and feet that can lead to infections, ulcers, and possible amputation (removal of a body part by surgery, such as toes or feet)</li>
+                                <li>Retinopathy (an eye disease that can cause blindness)</li>
+                                <li>Peripheral neuropathy (damaged nerves to the arms and legs that causes numbness, pain, weakness, and poor coordination)</li>
+                            </ul>
+                            <a href="https://www.cdc.gov/tobacco/campaign/tips/diseases/diabetes.html">Click Here For More</a>
+                        </div>
+                    </details>
+                    <details id="ImmuneSystem">
+                        <summary class="Title-Heading Title-Heading-custom">Weak Immune System</summary>
+                        <div class="text-custom-background">
+                            <p class="text-custom">
+                                Smoking harms the immune system and can make the body less successful
+                                at fighting disease. The immune system is the body’s way of protecting itself
+                                from infection and disease; it works to fight everything from cold and flu
+                                viruses to serious conditions such as cancer.
+                                Additionally, smoking is known to compromise the equilibrium, or balance,
+                                of the immune system. This increases the risk for several immune and
+                                autoimmune disorders (conditions caused when the immune system
+                                mistakenly attacks the body’s healthy cells and tissues). New evidence finds
+                                that smoking is a cause of rheumatoid arthritis, an autoimmune disease in
+                                which the immune system attacks the joints and causes swelling and pain.
+                                People with rheumatoid arthritis have a harder time getting around and
+                                doing normal daily activities. Smoking also interferes with the effectiveness
+                                of certain treatments for rheumatoid arthritis.
+                            </p>
+                            <a href="https://www.cdc.gov/tobacco/data_statistics/sgr/50th-anniversary/pdfs/fs_smoking_overall_health_508.pdf">Click Here For More</a>
+                        </div>
+                    </details>
+                    <details id="Vision">
+                        <summary class="Title-Heading Title-Heading-custom">Vision Problem</summary>
+                        <div class="text-custom-background">
+                            <p class="text-custom">
+                                Cataracts (clouding of the eye's natural lens) are a leading cause of blindness in the world.
+                                More than 50 percent of Americans will have a cataract or have had cataract surgery by age 80.
+                                Smokers significantly increase their risk of developing a cataract compared with non-smokers.
+                                In fact, studies show that people who smoke double their chance of forming cataracts, and the risk continues to increase the more you smoke.
+                            </p>
+                            <a href="https://www.allaboutvision.com/smoking/">Click Here For More</a>
+                        </div>
+                    </details>
+                    <details id="Oral">
+                        <summary class="Title-Heading Title-Heading-custom">Poor Oral Hygiene</summary>
+                        <div class="text-custom-background">
+                            <p class="text-custom">
+                                Smoking and other tobacco products can lead to gum disease by affecting the attachment of bone and
+                                soft tissue to your teeth. More specifically, it appears that smoking interferes with the normal
+                                function of gum tissue cells. This interference makes smokers more susceptible to infections, such
+                                as periodontal disease, and also seems to impair blood flow to the gums - which may affect wound healing.
+                                Smoking tobacco can limit a person's ability to taste and smell things properly. It can also stain the teeth yellow or brown.
+                            </p>
+                            <p class="text-custom-para">Symptoms of gum disease include:</p>
+                            <ul class="Damage-Details-List">
+                                <li>swollen and tender gums</li>
+                                <li>bleeding when brushing</li>
+                                <li>loose teeth</li>
+                                <li>sensitive teeth</li>
+                            </ul>
+                            <a href="https://www.webmd.com/oral-health/guide/smoking-oral-health#1">Click Here For More</a>
+                        </div>
+                    </details>
+                    <details id="Fertility">
+                        <summary class="Title-Heading Title-Heading-custom">Fertility Problem</summary>
+                        <div class="text-custom-background">
+                            <p class="text-custom">
+                                Smoking cigarettes can damage a female's reproductive system and make it more difficult to get pregnant.
+                                This may be because tobacco and the other chemicals in cigarettes affect hormone levels.
+                                In males, the more cigarettes a person smokes and the longer they smoke for, the higher the risk of erectile dysfunction.
+                                Smoking can also affect the quality of the sperm and therefore reduce fertility.
+                            </p>
+                            <a href="https://www.medicalnewstoday.com/articles/324644.php#fertility-problems">Click Here For More</a>
+                        </div>
+                    </details>
+                </div>
+            </div>
+        </div>
+        <div><h2 class="Title-Heading">Amount of tar going into your lungs every year: </h2></div>
+        <div class="result" id="tar-per-year">236 grams</div>
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-4">
+                <div class="field cigs-per-day">
+                    <label for="calculator-cigs-per-day"> How many cigarettes do you smoke in a day? </label>
+                    <div class="slider-box">
+                        <div id="cigs-per-day" class="noUiSlider sb-no-decorate one-hundred noUi-target noUi-ltr noUi-horizontal">
+                            <div class="noUi-base">
+                                <div class="noUi-connects"></div>
+                                <div class="noUi-origin" style="transform: translate(-66.6667%, 0px); z-index: 4;">
+                                    <div class="noUi-handle noUi-handle-lower" data-handle="0" tabindex="0" role="slider" aria-orientation="horizontal" aria-valuemin="1.0" aria-valuemax="100.0" aria-valuenow="34.0" aria-valuetext="34">
+                                        <div class="noUi-touch-area"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <input onchange="updatelungs()" id="calculator-cigs-per-day" class="slider-field has-validity valid has-value" type="number" min="0" max="100" name="cigs_per_day" value="0" required="">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="results">
+                    <div class="result-box">
+
+                    </div>
+                    <div class="lungs-box">
+                        <svg class="lungs" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 160 160" xml:space="preserve">
+                        <style type="text/css">
+                            .lung-pattern {
+                                fill: rgba(255, 255, 255, 0.3);
+                            }
+
+                            .lung-body-back {
+                                fill: url(#lung_gradient);
+                            }
+
+                            .lung-body-front {
+                                fill: url(#lung_pattern);
+                            }
+
+                            .lung-stem {
+                                fill: #B8B8B8;
+                            }
+</style>
+                        <defs>
+                        <lineargradient id="lung_gradient" x1="0" x2="0" y1="1" y2="0.6499999999999999">
+                        <stop offset="0%" stop-color="#2B2837"></stop>
+                        <stop offset="70%" stop-color="#2B2837"></stop>
+                        <stop offset="99%" stop-color="#869099"></stop>
+                        <stop offset="100%" stop-color="#A9587D"></stop>
+                                                </lineargradient>
+                        <pattern width="18" height="16" patternUnits="userSpaceOnUse" id="lung_pattern" viewBox="0 -16 18 16" style="overflow:visible;">
+                        <g>
+                        <path class="lung-pattern" d="M5-16v0.3c0,1.1,0.5,2.3,1,2.6c0.6,0.3,1.5,0.9,2,1.2c0.6,0.3,1.5,0.3,2,0c0.6-0.3,1.5-0.9,2-1.2
+                    c0.6-0.3,1-1.5,1-2.6V-16h1v0.3c0,1.1,0.5,2.3,1,2.6c0.6,0.3,1.5,0.9,2,1.2c0.3,0.2,0.6,0.2,1,0.2v7.2c-0.4,0-0.7,0.1-1,0.2
+                    c-0.6,0.3-1.5,0.9-2,1.2c-0.6,0.3-1,1.5-1,2.6V0h-1v-0.3c0-1.1-0.5-2.3-1-2.6c-0.6-0.3-1.5-0.9-2-1.2c-0.6-0.3-1.5-0.3-2,0
+                    S6.5-3.3,6-3C5.4-2.6,5-1.5,5-0.3V0H4v-0.3C4-1.5,3.6-2.6,3-3C2.5-3.3,1.6-3.8,1-4.2C0.7-4.3,0.4-4.4,0-4.4v-7.2
+                    c0.4,0,0.7-0.1,1-0.2c0.6-0.3,1.5-0.9,2-1.2c0.6-0.3,1-1.5,1-2.6V-16H5z M9.5-7.7c0,1.1,0.5,2.3,1,2.6c0.6,0.3,1.5,0.9,2,1.2
+                    c0.6,0.3,1.5,0.3,2,0s1.5-0.9,2-1.2c0.6-0.3,1-1.5,1-2.6v-0.7c0-1.1-0.5-2.3-1-2.6c-0.6-0.3-1.5-0.9-2-1.2c-0.6-0.3-1.5-0.3-2,0
+                    c-0.6,0.3-1.5,0.9-2,1.2c-0.6,0.3-1,1.5-1,2.6V-7.7z M3.5-12.2c-0.6,0.3-1.5,0.9-2,1.2c-0.6,0.3-1,1.5-1,2.6v0.7
+                    c0,1.1,0.5,2.3,1,2.6c0.6,0.3,1.5,0.9,2,1.2s1.5,0.3,2,0S7-4.7,7.5-5c0.6-0.3,1-1.5,1-2.6v-0.7c0-1.1-0.5-2.3-1-2.6
+                    c-0.6-0.3-1.5-0.9-2-1.2C5-12.5,4-12.5,3.5-12.2z"></path>
+                                                    </g>
+                                                </pattern>
+                                            </defs>
+                        <g>
+                        <path class="lung-body-back" d="M55.4,18.4c0,0-54,22-50,109c1,31,14,21,14,21s11-13,28-17c17-4,26-10,26-39s-7-27-7-61
+            C66.4,15.4,55.4,18.4,55.4,18.4z"></path>
+                        <path class="lung-body-back" d="M84.4,32.4c0,0-1-24,21-11s44,58,44,58s12,48,0,68c-3,4-10-2-10-2s-8-10-31-12c-9-1-9-15-9-15s-3-17-17-21
+            c-9-3,0-43,1-49S84.4,32.4,84.4,32.4z"></path>
+                        <path class="lung-body-front" d="M55.4,18.4c0,0-54,22-50,109c1,31,14,21,14,21s11-13,28-17c17-4,26-10,26-39s-7-27-7-61
+            C66.4,15.4,55.4,18.4,55.4,18.4z"></path>
+                        <path class="lung-body-front" d="M84.4,32.4c0,0-1-24,21-11s44,58,44,58s12,48,0,68c-3,4-10-2-10-2s-8-10-31-12c-9-1-9-15-9-15s-3-17-17-21
+            c-9-3,0-43,1-49S84.4,32.4,84.4,32.4z"></path>
+                        <path class="lung-stem" d="M71.1,11.5c0,0,0.6,41-0.7,43.9c-0.3,0.6-1.4,3-2.6,4.1c-1.1,1-5,1.9-8.9,0c-3.6-1.9-4.2-7.2-4.7-6.7
+            c-1.6,1.6-0.2,3.2-0.9,5.3c-0.3,0.9-3.1,0.1-3.2,0.9c0,0.7,1.5,0.6,1.5,2.3c0,1.2-2.2,1.4-2.8,3.3c-0.2,0.7,6.8-1,9.2-0.1
+            c2.4,0.9,3.8,2.3,3.4,2.8c-3,3.8-6.9,8.4-10.3,12.5c-2.4,2.8-9.9-0.9-9.8-0.3c0.8,3,6.3,3.1,5.5,4.8c-0.5,1.1-4.9,5.2-6.8,7
+            c-4,3.9-9,4.4-8.6,4.8c1.1,1.1,3.8,0.3,4.8,1.3s-1.4,5.4-0.4,7c0.3,0.4,7.2-11.4,9-10.7c0.8,0.3-0.8,6.4,1.5,7.3
+            c0.4,0.1,1.1-4.6,2.2-7.6c1.1-2.8,4.5-6.4,5.7-7c1.8-0.9,0,5,1,5c0.1,0,1.6-3.7,3.3-7.2c1.7-3.5,17.2-22.1,19.3-22.1
+            s11,5.6,15.1,10.4c2.9,3.4,4.5,7.6,4.9,7.2c1.9-2.1-0.3-5.6,0.4-6.3c0.7-0.7,8,4.9,8.6,4.3c0.2-0.3-1.2-3.4-3.2-5.5
+            c-2.5-2.7-5.8-4.4-5.3-4.8c1.1-0.9,8.8-1.2,9.2-3.4c0.1-0.5-9.2,2.4-13.2-0.6c-4-3-11.3-9.3-13-13c-1.7-3.7-1-38.7-1-38.7
+            C80.4,9.5,71.1,9.5,71.1,11.5z"></path>
+                                            </g>
+                                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!--End of content-->
+
+
+    <form id="form" onsubmit="formsubmit()">
+        <div class="container-fluid">
+
+            <div class="row">
+                <div class="col-md-2 col-sm-7"></div>
+                <div class="Feedback-container col-md-8">
+                    <div><label>Leave a Reply</label></div>
+                    <div class="input-group"><textarea id="Comments" required class="form-control"></textarea></div>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="name col-md-2 col-sm-7">
+                    <label>Name</label>
+                    <div class="input-group"><input type="text" class="form-control input-sm form-input-custom" required name="name" value="" placeholder="Type your name here..." /></div>
+                </div>
+                <div class="Email col-md-2 col-sm-7">
+                    <label>Email</label>
+                    <div class="input-group"><input type="email" class="form-control input-sm form-input-custom" required name="email" value="" placeholder="Type your email here..." /></div>
+                </div>
+                <div class="col-md-1 col-sm-6"></div>
+                <div class="col-md-3 col-sm-6"><input type="submit" class="submit-custom btn-fluid btn-block" name="submit" value="Submit" /></div>
+            </div>
+            <div class="col-sm-12 text-center">
+                <div id="alertsubmit" class="alert alert-primary" style="display: none;" role="alert">
+
+                </div>
+            </div>
+        </div>
+
+    </form>
+
+
+
+    <footer>
+        <div w3-include-html="footer.html"></div>
+    </footer>
+
+    
+
+
+    <script>
+        includeHTML();
+    </script>
+    <script src="js/effects.js"></script>
+</body>
+</html>

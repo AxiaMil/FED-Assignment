@@ -1,0 +1,44 @@
+/* Header */
+
+
+.container-custom-header {
+    background-image: url("../images/others.jpg");
+    background-size: cover;
+}
+
+.Website-Heading {
+    color: black;
+}
+
+.img-custom-wrap {
+    text-align: center;
+    display: block;
+}
+
+.img-custom-wrap img {
+    border: 5px double black;
+}
+
+.Title-Description-List {
+    margin-left: 5%;
+}
+
+.text-custom-others {
+    font-size: 1.5rem;
+}
+
+.text-custom-background {
+    margin-top: 2%;
+    border: 1px solid black !important;
+    margin-bottom: 10%
+}
+
+.First-Letter {
+    font-size: 3rem;
+    float: left;
+    margin-right: 1%;
+    background: linear-gradient( to bottom, #43cea2, #185a9d );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+

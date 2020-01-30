@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Darien Tan ">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Staying Smoke Free</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="js/include.js"></script>
+    <script src="js/cures.js"></script>
+    <script src="https://kit.fontawesome.com/9c3fdd9015.js" crossorigin="anonymous"></script>
+    <link href="css/cures.css" rel="stylesheet" />
+    <link href="css/footer.css" rel="stylesheet" />
+    <script src="js/nav-active.js"></script>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12">
+                <div w3-include-html="header.html"></div>
+            </div>
+        </div>
+        <form>
+            <div class="row">
+                <div class="col-sm-8 text-center">
+                    <h1 class="display-3 form-center">Get Help!</h1>
+                    <div class="input-group">
+                        <input type="text" name="name" class="form-control form-center my-1" id="name" placeholder="Name">
+                    </div>
+                    <div class="input-group">
+                        <input type="email" name="email" class="form-control form-center my-1" id="email" placeholder="Email">
+                    </div>
+                    <div class="input-group">
+                        <input type="number" name="phoneNo" class="form-control form-center my-1" id="phoneNo" placeholder="Phone Number" pattern="[6|8|9]{0}[0-9]{7}">
+                    </div>
+                </div>
+            </div>
+        </form>
+        <div class="col-sm-12 text-center">
+            <div>
+                <input type="button" class="btn btn-success my-2" onclick="getHelpPls()" value="Submit" />
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div w3-include-html="../footer.html"></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        includeHTML();
+    </script>
+</body>
+</html>

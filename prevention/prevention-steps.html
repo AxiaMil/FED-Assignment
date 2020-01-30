@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Jason Chua">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Prevention</title>
+    <!--Initializing all required javscript and css modules.-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script src="/js/include.js"></script>
+    <link rel="stylesheet" href="/css/prevention-inner-nav.css">
+    <link rel="stylesheet" href="/css/prevention.css">
+    <link rel="stylesheet" href="/css/prevention-steps.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <script src="/js/nav-active.js"></script>
+    <script src="https://kit.fontawesome.com/9c3fdd9015.js" crossorigin="anonymous"></script>
+    <script src="/js/prevention-steps.js"></script>
+    <script src="/js/prevention.js"></script>
+</head>
+<body>
+    <div class="loader">
+        <div class="load">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="margin: auto; display: block; shape-rendering: auto;" width="191px" height="191px" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid">
+                <path fill="none" stroke="#e90c59" stroke-width="8" stroke-dasharray="42.76482137044271 42.76482137044271" d="M24.3 30C11.4 30 5 43.3 5 50s6.4 20 19.3 20c19.3 0 32.1-40 51.4-40 C88.6 30 95 43.3 95 50s-6.4 20-19.3 20C56.4 70 43.6 30 24.3 30z" stroke-linecap="round" style="transform:scale(0.8);transform-origin:50px 50px">
+                  <animate attributeName="stroke-dashoffset" repeatCount="indefinite" dur="4.166666666666667s" keyTimes="0;1" values="0;256.58892822265625"></animate>
+                </path>
+            </svg>
+        </div>
+    </div>
+    <div class="custom-nav-item"> </div>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"	 width="20px" height="20px" viewBox="0 0 444.819 444.819" style="enable-background:new 0 0 444.819 444.819;"	 xml:space="preserve"><g>	<path d="M434.252,208.708L248.387,22.843c-7.042-7.043-15.693-10.564-25.977-10.564c-10.467,0-19.036,3.521-25.697,10.564		L10.848,208.708C3.615,215.94,0,224.604,0,234.692c0,9.897,3.619,18.459,10.848,25.693l21.411,21.409		c6.854,7.231,15.42,10.855,25.697,10.855c10.278,0,18.842-3.624,25.697-10.855l83.939-83.651v200.998		c0,9.89,3.567,17.936,10.706,24.126c7.139,6.184,15.752,9.273,25.837,9.273h36.545c10.089,0,18.698-3.09,25.837-9.273		c7.139-6.188,10.712-14.236,10.712-24.126V198.144l83.938,83.651c6.848,7.231,15.413,10.855,25.7,10.855		c10.082,0,18.747-3.624,25.975-10.855l21.409-21.409c7.043-7.426,10.567-15.988,10.567-25.693		C444.819,224.795,441.295,216.134,434.252,208.708z"/></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+    </button>
+    <ul class="ul nav-menu" id="navigation">
+        <li class="sidenav-item"><a class="sidenav-itema" href="#quitpage"><i class="fa fa-ban"></i></a></li>
+        <li class="sidenav-item"><a href="#nrtpage"><i class="fa fa-medkit" aria-hidden="true"></i></a></li>
+        <li class="sidenav-item"><a href="#nonnrtpage"><i class="fa fa-heart" aria-hidden="true"></i></a></li>
+        <li class="sidenav-item"><a href="#supportpage"><i class="fa fa-users" aria-hidden="true"></i></a></li>
+        <li class="sidenav-item"><a href="#alternativepage"><i class="fa fa-refresh" aria-hidden="true"></i></a></li>
+    </ul>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12">
+                <div w3-include-html="/header.html"></div>
+            </div>
+        </div>
+        <div w3-include-html="prevention-header.html" class="sticky-top"></div>
+    </div>
+    <div class="container">
+        <div class="col-sm-12">
+            <h1 class="display-3 text-center">Prevention Methods</h1>
+        </div>
+        <div data-aos="fade-left" class="row">
+            <div class="col-sm-12 section-custom">
+                
+                <h1 class="display-4" id="quitpage">
+                    Prepare for quit day
+                </h1>
+                <p class="lead">Once you have decided to stop smoking, you are ready to set a quit date. Pick a day that is not too far in the future (so that you do not change your mind), but which gives you enough time to prepare. <br> <br>Choose your quit date and prepare to stop smoking altogether on that day.
+                    There are several ways to stop smoking, but ultimately, you need to decide whether you are going to:</p>
+                <ul>
+                    <li>quit abruptly, or continue smoking right up until your quit date and then stop</li>
+                    <li>quit gradually, or reduce your cigarette intake slowly until your quit date and then stop</li>
+                </ul>
+                <p>Research that compared abrupt quitting with reducing smoking found that neither produced superior quit rates over the other, so choose the method that best suits you.</p>
+            </div>
+
+            <div class="col-sm-12 section-custom">
+                <h1 class="display-4" id='nrtpage'>Use NRTs</h1>
+                <p class="lead">
+                    Going cold turkey, or quitting smoking without the help of NRT, medication, or therapy, is a popular way to give up smoking. However, only around 6 percent of these quit attempts are successful. It is easy to underestimate how powerful nicotine dependence really is. <br><br>
+                    NRTs can help you to fight the withdrawal symptoms associated with quitting smoking.<br><br>
+                    NRT can reduce the cravings and withdrawal symptoms you experience that may hinder your attempt to give up smoking. NRTs are designed to wean your body off cigarettes and supply you with a controlled dose of nicotine while sparing you from exposure to other chemicals found in tobacco.<br><br>
+
+                    The U.S Food and Drug Administration (FDA) have approved five types of NRT:
+                    <ul>
+                        <li>skin patches</li>
+                        <li>chewing gum</li>
+                        <li>lozenges</li>
+                        <li>nasal spray (prescription only)</li>
+                        <li>inhaler (prescription only)</li>
+                    </ul>
+                    If you have decided to go down the NRT route, discuss your dose with a healthcare professional before you quit smoking. Remember that while you will be more likely to quit smoking using NRT, the goal is to end your addiction to nicotine altogether, and not just to quit tobacco.<br><br>
+                    Contact your healthcare professional if you experience dizziness, weakness, nausea, vomiting, fast or irregular heartbeat, mouth problems, or skin swelling while using these products.
+                </p>
+            </div>
+
+            <div class="col-sm-12 section-custom">
+                <h1 class="display-4" id="nonnrtpage">Consider non-nicotine medications</h1>
+                <p class="lead">
+                    The FDA have approved two non-nicotine-containing drugs to help smokers quit. These are bupropion (Zyban) and varenicline (Chantix). <br><br>
+                    Talk to your healthcare provider if you feel that you would like to try one of these to help you to stop smoking, as you will need a prescription.<br><br>
+                    Bupropion acts on chemicals in the brain that play a role in nicotine craving and reduces cravings and symptoms of nicotine withdrawal. Bupropion is taken in tablet form for 12 weeks, but if you have successfully quit smoking in that time, you can use it for a further 3 to 6 months to reduce the risk of smoking relapse.<br><br>
+                    Varenicline interferes with the nicotine receptors in the brain, which results in reducing the pleasure that you get from tobacco use, and decreases nicotine withdrawal symptoms. Varenicline is used for 12 weeks, but again, if you have successfully kicked the habit, then you can use the drug for another 12 weeks to reduce smoking relapse risk<br><br>
+                    Risks involved with using these drugs include behavioral changes, depressed mood, aggression, hostility, and suicidal thoughts or actions.
+                </p>
+            </div>
+
+            <div class="col-sm-12 section-custom">
+                <h1 class="display-4" id="supportpage">Seek Behavioral Support</h1>
+                <p class="lead">
+                    The emotional and physical dependence you have on smoking makes it challenging to stay away from nicotine after your quit day. To quit, you need to tackle this dependence. Trying counseling services, self-help materials, and support services can help you to get through this time. As your physical symptoms get better over time, so will your emotional ones. <br><br>
+                    Combining medication - such as NRT, bupropion, and varenicline - with behavioral support has been demonstrated to increase the chances of long-term smoking cessation by up to 25 percent.<br><br>
+                    Behavioral support can range from written information and advice to group therapy or individual counseling in person, by phone, or online. Self-help materials likely increase quit rates compared with no support at all, but overall, individual counseling is the most effective behavioral support method.<br><br>
+                    The National Cancer Institute (NCI) provide help to anyone who wants to stop smoking through their support services: <br><br>
+                    <ul>
+                        <li>Smoking quit-line: 1800-438-2000</li>
+                        <li><a href="https://livehelp.cancer.gov/app/chat/chat_launch" class="content-link" target="_blank" rel="noopener noreferrer">LiveHelp</a></li>
+                        <li><a href="https://smokefree.gov/smokefreetxt" class="content-link" target="_blank" rel="noopener noreferrer">SmokefreeTXT</a></li>
+                        <li><a href="https://twitter.com/SmokefreeUs" class="content-link" target="_blank" rel="noopener noreferrer">Twitter</a></li>
+                    </ul>
+                    Support groups, such as Nicotine Anonymous (NicA), can prove useful too. NicA applies the 12-step process of Alcoholics Anonymous to tobacco addiction. You can find your nearest NicA group using their website or by calling 1-877-TRY-NICA (1-877-879-6422).
+                </p>
+            </div>
+
+            <div class="col-sm-12 section-custom">
+                <h1 class="display-4" id="alternativepage">Try alternative therapies</h1>
+                <p class="lead">
+                    Some people find alternative therapies useful to help them to quit smoking, but there is currently no strong evidence that any of these will improve your chances of becoming smoke-free, and, in some cases, these methods may actually cause the person to smoke more. <br><br>
+                    Some alternative methods to help you to stop smoking might include:<br>
+                    <ul>
+                        <li>filters</li>
+                        <li>smoking deterrents</li>
+                        <li>electronic cigarettes</li>
+                        <li>tobacco strips and sticks</li>
+                        <li>nicotine drinks, lollipops, straw and lip balms</li>
+                        <li>hypnosis</li>
+                        <li>acupuncture</li>
+                        <li>magnet therapy</li>
+                        <li>cold laser therapy</li>
+                        <li>herbs and supplements</li>
+                        <li>yoga, mindfulness and meditation</li>
+                    </ul>
+                </p>
+            </div>
+
+        </div>
+
+        <div data-aos="fade-left" class="row">
+           
+        </div>
+    </div>
+    <footer class="my-3">
+        <div w3-include-html="/footer.html"></div>
+    </footer>
+    <script>
+        AOS.init();
+        includeHTML();
+    </script>
+        <!-- Start of HubSpot Embed Code -->
+  <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/7072577.js"></script>
+  <!-- End of HubSpot Embed Code -->
+</body>

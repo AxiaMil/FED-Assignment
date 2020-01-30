@@ -1,0 +1,480 @@
+html {
+    scroll-behavior: smooth
+}
+
+font-face {
+    font-family: roboto;
+    src: url(https://fonts.google.com/specimen/Roboto)
+}
+
+body {
+    font-family: Roboto;
+    margin: 0px;
+}
+
+* {
+    box-sizing: border-box;
+}
+.navheader{
+    z-index: 1;
+    position: fixed;
+}
+.ul {
+    position: fixed;
+    top: 10%;
+    right: 15px;
+    transform: translateY(50%);
+    margin: 0;
+    padding: 0;
+    z-index: 1;
+}
+
+.ul li {
+    list-style: none;
+}
+
+.ul li a {
+    display: block;
+    text-decoration: none;
+    height: 45px;
+    font-size: 24px;
+    color: #f1c40f;
+    margin: 4px 0;
+    padding-left: 15px;
+    line-height: 45px;
+    opacity: 0.5;
+}
+
+.ul li a:hover {
+    background: #333;
+    text-decoration: none;
+    color: #Fff;
+    transform: rotate(10deg)
+}
+
+/*Content*/
+.header {
+    width: 100%;
+    height: 100vh;
+}
+
+.bg {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/legislation.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    padding-top: 2%;
+    width: 90%;
+    height: 80%;
+    display: flex;
+    position: relative;
+    justify-content: space-around;
+}
+
+.box {
+    /* width: 100%; */
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    overflow: hidden;
+    opacity: 0.9;
+    transition: 0.5s ease;
+}
+
+.box:hover {
+    /* width: 30%; */
+    /* height: 100%; */
+    transform: scale(1.1);
+    border-radius: 20px;
+}
+
+.box a img:hover {
+    transform: rotate(5deg);
+}
+
+.box .top {
+    width: 100%;
+    height: 60%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background: #2c3e50;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.box .top img {
+    max-width: 300px;
+    max-height: 300px;
+}
+
+.box .mid {
+    width: 100%;
+    height: 10%;
+    background: #ecf0f1;
+}
+
+.box .bot {
+    width: 100%;
+    height: 30%;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background: #bdc3c7;
+}
+
+.box .bot p {
+    width: 80%;
+    height: auto;
+    text-align: center;
+}
+
+.col {
+    /* width: 85%; */
+    /* height: 15%; */
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    overflow: hidden;
+    opacity: 0.9;
+    transition: 0.5s ease;
+    position: absolute;
+    padding: 25px;
+}
+
+.colcontent {
+    margin-top: 10%;
+    width: 90%;
+    margin-bottom: 2%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    overflow: hidden;
+    opacity: 0.9;
+}
+
+.colcontent h2 {
+    padding: 20px;
+    color: #82ccdd;
+}
+
+.colcontent p {
+    display: none;
+    border: 5px solid white;
+    padding: 5px;
+    border-radius: 20px;
+    color: #4a69bd;
+}
+
+.colcontent h2:hover .show {
+    display: block;
+}
+
+/*Law*/
+.law {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background: #fff;
+}
+
+.bglaw {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url(/images/5.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contentlaw {
+    background: #2c3e50;
+    width: 90%;
+    height: auto;
+    display: flex;
+    opacity: 0.9;
+    border-radius: 20px;
+    justify-content: center;
+    transition: .3s;
+}
+
+.contentlaw h1 {
+    color: #ecf0f1;
+    padding-top: 20px;
+    justify-content: center;
+    align-items: center;
+    text-decoration: underline overline;
+}
+
+.contentlaw h2 p {
+    padding: 20px;
+}
+
+/*reg*/
+.reg {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background: #fff;
+}
+
+.bgreg {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url(/images/64657283-rules-and-regulations-multicolor-concept-with-doodle-icons-around-on-white-brick-wall-background-mod.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contentreg {
+    background: #2c3e50;
+    width: 90%;
+    height: auto;
+    display: flex;
+    opacity: 0.9;
+    border-radius: 20px;
+    justify-content: center;
+}
+
+.contentreg h1 {
+    color: #ecf0f1;
+    padding-top: 20px;
+    justify-content: center;
+    align-items: center;
+    text-decoration: underline overline;
+}
+
+.contentreg h2 p {
+    padding: 20px;
+}
+
+/*report*/
+.report {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background: #fff;
+}
+
+.bgreport {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url(/images/quiz-1-.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contentreport {
+    background: #2c3e50;
+    width: 90%;
+    height: 100;
+    display: flex;
+    opacity: 0.9;
+    border-radius: 20px;
+    justify-content: center;
+}
+
+.reportcontent {
+    margin-top: 6%;
+    width: 90%;
+    margin-bottom: 2%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    overflow: hidden;
+    opacity: 1;
+}
+
+.contentreport h1 {
+    color: #ecf0f1;
+    padding-top: 0px;
+    justify-content: center;
+    align-items: center;
+    text-decoration: underline overline;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: auto;
+    padding: 0 10px;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-form-text {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 16px 0;
+    border: 0;
+    background: #111;
+    padding: 20px 40px;
+    outline: none;
+    color: #ddd;
+    transition: 0.5s;
+}
+
+.contact-form-text:focus {
+    box-shadow: 0 0 10px 4px #34495e;
+}
+
+textarea.contact-form-text {
+    resize: none;
+    height: 120px
+}
+
+#fileplace:hover {
+    cursor: pointer;
+}
+
+.contact-form-btn {
+    float: right;
+    border: 0;
+    background: #6c5ce7;
+    color: #fff;
+    padding: 12px 50px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+    opacity: 1;
+}
+
+.contact-form-btn:hover {
+    background: #2980b9;
+}
+
+/*Loader*/
+.loader-wrapper {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #242f3f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    border: 4px solid #Fff;
+    animation: loader 2s infinite ease;
+}
+
+.box.mid h1 {
+    font-size: 2rem;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+/* Tablet Layout: 768px. */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .reportcontent {
+        margin-top: 13%;
+    }
+}
+
+
+/* Mobile Layout: 320px. */
+@media only screen and (max-width: 767px) {
+    .mob-margin {
+        margin: 10px 0;
+    }
+
+    .header,
+    section#lawpage,
+    .report {
+        height: auto;
+    }
+
+    .bg,
+    .bglaw,
+    .bgreport {
+        height: fit-content;
+        padding: 35px 0;
+    }
+
+    .col {
+        text-align: center;
+    }
+
+    .bgreg {
+        height: auto;
+    }
+
+    .contentreg {
+        height: auto;
+    }
+
+    .col h1 {
+        margin-bottom: 20px;
+    }
+
+    .reportcontent {
+        margin-top: 20%;
+    }
+
+    .colcontent {
+        margin-top: 34%;
+    }
+
+    .col h1 {
+        font-size: 1.7rem;
+    }
+
+    input.contact-form-btn {
+        width: 100%;
+    }
+
+
+
+}
+
+
+form.content-form {
+    width: 100%;
+}
+
+.contact-form-text {
+    border-radius: 10px;
+}
+
+select#casetype {
+    padding: 20px 40px;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}

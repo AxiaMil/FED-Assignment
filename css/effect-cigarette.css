@@ -1,0 +1,35 @@
+/* Header */
+.container-custom-header {
+    background-image: url("../images/cigarette.jpg");
+}
+
+.Website-Heading {
+    color: white;
+}
+
+/* Content */
+.row-custom {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.img-custom-cigarette {
+    margin: 2% auto;
+    display: flex;
+}
+
+.container-custom-ciga {
+    padding: 2%;
+}
+
+.ciga-ingredients-custom {
+    text-align: center;
+    background-color: white;
+    border-radius: 2%;
+    background-color: #ecf0f9;
+}
+
+.ciga-ingredients-custom:hover {
+    transform: scale(1.1);
+    transition-duration: 0.5s;
+}

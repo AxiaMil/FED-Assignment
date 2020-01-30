@@ -1,0 +1,214 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Jason Chua">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Prevention</title>
+    <!--Initializing all required javscript and css modules.-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script src="/js/include.js"></script>
+    <script src="https://kit.fontawesome.com/9c3fdd9015.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/prevention.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <!-- <link rel="stylesheet" href="/css/prevention-sidebar.css"> -->
+    <script src="/js/prevention.js"></script>
+    <script src="/js/nav-active.js"></script>
+    <!-- <script src="/js/prevention-sidebar.js"></script> -->
+</head>
+<body ng-app="">
+    <div class="loader">
+        <div class="load">
+            <svg style="margin: auto; display: block; shape-rendering: auto;" width="191px" height="191px" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid">
+                <path fill="none" stroke="#e90c59" stroke-width="8" stroke-dasharray="42.76482137044271 42.76482137044271" d="M24.3 30C11.4 30 5 43.3 5 50s6.4 20 19.3 20c19.3 0 32.1-40 51.4-40 C88.6 30 95 43.3 95 50s-6.4 20-19.3 20C56.4 70 43.6 30 24.3 30z" stroke-linecap="round" style="transform:scale(0.8);transform-origin:50px 50px">
+                  <animate attributeName="stroke-dashoffset" repeatCount="indefinite" dur="4.166666666666667s" keyTimes="0;1" values="0;256.58892822265625"></animate>
+                </path>
+            </svg>
+        </div>
+    </div>
+    
+    <div class="custom-nav-item"> </div>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"	 width="20px" height="20px" viewBox="0 0 444.819 444.819" style="enable-background:new 0 0 444.819 444.819;"	 xml:space="preserve"><g>	<path d="M434.252,208.708L248.387,22.843c-7.042-7.043-15.693-10.564-25.977-10.564c-10.467,0-19.036,3.521-25.697,10.564		L10.848,208.708C3.615,215.94,0,224.604,0,234.692c0,9.897,3.619,18.459,10.848,25.693l21.411,21.409		c6.854,7.231,15.42,10.855,25.697,10.855c10.278,0,18.842-3.624,25.697-10.855l83.939-83.651v200.998		c0,9.89,3.567,17.936,10.706,24.126c7.139,6.184,15.752,9.273,25.837,9.273h36.545c10.089,0,18.698-3.09,25.837-9.273		c7.139-6.188,10.712-14.236,10.712-24.126V198.144l83.938,83.651c6.848,7.231,15.413,10.855,25.7,10.855		c10.082,0,18.747-3.624,25.975-10.855l21.409-21.409c7.043-7.426,10.567-15.988,10.567-25.693		C444.819,224.795,441.295,216.134,434.252,208.708z"/></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+    </button>
+    <div class="custom-nav">
+        <!-- <a><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"	 width="10%" height="10%" viewBox="0 0 462.89 462.891" style="enable-background:new 0 0 462.89 462.891;"	 xml:space="preserve"><g>	<g>		<path d="M459.375,38.609c0.203-3.941-0.757-7.569-2.752-10.524c-2.986-5.642-8.415-9.074-14.955-9.427			c-29.919-1.627-404.524-1.716-420.457-1.716c-4.928,0-9.199,1.711-12.405,4.951C2.108,26.049-1.122,33.3,0.351,41.019			c4.134,21.792,6.129,44.811,6.276,72.447c0.005,1.473,0.196,2.902,0.586,4.459c0.848,9.442,7.81,16.369,17.108,16.915			c11.527,0.68,76.52,1.366,151.778,2.163c111.228,1.173,249.649,2.635,266.371,4.636c0.776,0.094,1.533,0.142,2.259,0.142			c2.393,0,4.662-0.485,6.739-1.442c7.819-2.204,12.243-8.912,11.293-17.242C459.202,91.748,458.094,64.116,459.375,38.609z			 M424.895,104.014c-28.381-1.062-135.846-1.925-231.741-2.694c-67.648-0.541-131.946-1.061-150.877-1.528			c-0.5-16.32-1.736-31.74-3.765-46.819l18.349,0.02c82.601,0.084,324.77,0.333,366.13,0.973			C422.792,69.976,423.422,86.449,424.895,104.014z"/>		<path d="M459.375,190.699c0.203-3.94-0.757-7.568-2.752-10.529c-2.986-5.642-8.415-9.075-14.955-9.427			c-30.062-1.633-416.562-1.716-420.457-1.716c-4.928,0-9.204,1.711-12.405,4.951c-6.698,4.154-9.927,11.408-8.455,19.126			c4.134,21.792,6.129,44.811,6.276,72.445c0.005,1.473,0.196,2.904,0.586,4.458c0.848,9.436,7.805,16.361,17.103,16.92			c11.532,0.681,76.563,1.361,151.862,2.164c111.195,1.168,249.58,2.63,266.297,4.631c0.776,0.097,1.528,0.143,2.249,0.143			c2.402,0,4.667-0.488,6.749-1.442c7.82-2.204,12.243-8.917,11.288-17.24C459.202,243.835,458.094,216.206,459.375,190.699z			 M424.895,256.099c-28.381-1.062-135.892-1.925-231.822-2.696c-67.616-0.538-131.875-1.056-150.796-1.523			c-0.5-16.331-1.736-31.742-3.765-46.826l20.264,0.02c82.162,0.089,323.012,0.333,364.215,0.972			C422.792,222.061,423.422,238.534,424.895,256.099z"/>		<path d="M459.375,342.785c0.203-3.946-0.757-7.576-2.752-10.532c-2.986-5.637-8.415-9.069-14.955-9.419			c-29.874-1.631-404.524-1.712-420.457-1.717c-4.928,0-9.204,1.706-12.405,4.946c-6.698,4.158-9.927,11.41-8.455,19.129			c4.134,21.794,6.129,44.812,6.276,72.452c0.005,1.473,0.196,2.904,0.586,4.458c0.848,9.445,7.81,16.361,17.103,16.91			c11.537,0.681,76.609,1.371,151.966,2.163c111.147,1.178,249.481,2.641,266.193,4.642c0.776,0.091,1.528,0.132,2.249,0.132			c2.397,0,4.667-0.482,6.744-1.433c7.819-2.203,12.243-8.916,11.293-17.244C459.202,395.921,458.094,368.292,459.375,342.785z			 M424.895,408.189c-28.371-1.057-135.79-1.92-231.652-2.691c-67.692-0.544-132.035-1.066-150.966-1.534			c-0.5-16.325-1.736-31.736-3.765-46.828l22.13,0.03c81.738,0.086,321.289,0.335,362.354,0.975			C422.792,374.151,423.422,390.624,424.895,408.189z"/>	</g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg></a> -->
+        <!-- <button type="button" id="sidebarCollapse" class="btn btn-primary">
+            <i class="fa fa-bars"></i>
+            <span class="sr-only">Toggle Menu</span>
+          </button> -->
+    </div>
+    <div class="container-fluid">
+        <div class="header-image"></div>
+        <div class="row header-container">
+            <div class="col-sm-12">
+                <div w3-include-html="/header.html" class="navbar-custom"></div>
+            </div>
+
+            <h1 class="display-1 top-content-text text-center">
+                Stop Smoking Now
+            </h1>
+                    <!--<img src="https://laserquittherapy.ca/wp-content/uploads/2017/02/banner_00.jpg" alt="">-->
+
+            <!-- <div class="col-sm-12 svg-container">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"	 width="20%" height="20%" viewBox="0 0 470.061 470.061" style="enable-background:new 0 0 470.061 470.061;"	 xml:space="preserve"><g>	<g>		<path d="M449.379,271.605H20.682C9.278,271.605,0,280.884,0,292.288v38.171c0,11.404,9.278,20.682,20.682,20.682h428.696			c11.404,0,20.683-9.277,20.683-20.682v-38.171C470.061,280.884,460.783,271.605,449.379,271.605z M61.918,283.605h303.65v55.535			H61.918V283.605z M49.918,339.141H36.959v-55.535h12.958L49.918,339.141L49.918,339.141z M12.001,330.459v-38.171			c0-4.787,3.895-8.683,8.682-8.683h4.277v55.535h-4.277C15.895,339.141,12.001,335.246,12.001,330.459z M458.061,330.459			c0,4.787-3.896,8.682-8.683,8.682h-71.811v-55.535h71.811c4.787,0,8.683,3.896,8.683,8.683V330.459z"/>		<path d="M29.491,268.925c3.313,0,6-2.687,6-6v-16.884c0-5.799,8.173-10.883,17.49-10.883h41.108			c16.261,0,29.49-13.229,29.49-29.49v-14.682c0-9.644,7.846-17.49,17.49-17.49h57.257c16.261,0,29.49-12.241,29.49-27.288V124.92			c0-3.313-2.686-6-6-6c-3.313,0-6,2.687-6,6v21.288c0,8.43-7.846,15.288-17.49,15.288h-57.257c-16.261,0-29.49,13.229-29.49,29.49			v14.682c0,9.644-7.846,17.49-17.49,17.49H52.981c-16.261,0-29.49,10.266-29.49,22.883v16.884			C23.491,266.238,26.177,268.925,29.491,268.925z"/>	</g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+                <svg version="1.1" id="cross" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"	width="20%" height="20%" viewBox="0 0 490 490" style="enable-background:new 0 0 490 490;" xml:space="preserve"><polygon points="386.813,0 245,141.812 103.188,0 0,103.188 141.813,245 0,386.812 103.187,489.999 245,348.187 386.813,490 	490,386.812 348.187,244.999 490,103.187 "/><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+            </div> -->
+        </div>
+
+        <div data-aos="fade-left" class="jumbotron-fluid">
+            <div class="row">
+                <div class="col-sm-12 my-3">
+                    <p class="lead text-center"> With the increase of electronic cigarettes and the ease of buying a cigarette, many teeanagers are now exposed to these harmful substances. This phenomenon is ever present in Singapore where one could notice even Secondary schools students smoking. To combat this problem, listed below are several ways to do so.</p>
+                </div>
+            </div>
+            <div class="row my-3">
+                <hr id="thread">
+            </div>
+            <div class="row my-3">
+                <div class="col-sm-5 offset-md-1 my-3 d-flex align-items-stretch">
+                    <div class="card" data-aos="fade-left">
+                        <img class="card-img-top" src="/images/prevent.jpeg" alt="Card image cap">
+                        <div class="card-body">
+                            <h4 class="card-title">Ways to stop</h4>
+                            <p class="card-text">
+                                Learn about more and indepth steps about how to stop smoking!
+                            </p>
+                            <a href="prevention-steps.html" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>      
+                </div>        
+                <div class="col-sm-5 my-3" data-aos="fade-left">
+                    <div class="card">
+                        <img class="card-img-top" src="/images/counsel.jpeg" alt="Card image">
+                        <div class="card-body">
+                            <h4 class="card-title">How to Prevent</h4>
+                            <p class="card-text">
+                                Stop it before it happens!
+                            </p>
+                            <a href="prevention-support.html" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>      
+                </div> 
+            </div>
+            <div class="row my-3">
+                <div class="col-sm-5 offset-md-1 my-3 d-flex align-items-stretch">
+                    <div class="card" data-aos="fade-left">
+                        <img class="card-img-top" src="/images/prevent.jpeg" alt="Card image cap">
+                        <div class="card-body">
+                            <h4 class="card-title">Prevention Steps</h4>
+                            <p class="card-text">
+                                Learn about more and indepth steps about how to stop smoking!
+                            </p>
+                            <a href="prevention-steps.html" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>      
+                </div>        
+                <div class="col-sm-5 my-3" data-aos="fade-left">
+                    <div class="card">
+                        <img class="card-img-top" src="/images/counsel.jpeg" alt="Card image">
+                        <div class="card-body">
+                            <h4 class="card-title">Support</h4>
+                            <p class="card-text">
+                                Seek professional help to help combat you smoking problems!
+                            </p>
+                            <a href="prevention-steps.html" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>      
+                </div> 
+            </div>
+            <section class="services ">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h3 class="text-center">Links</h3>
+                    </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-10 col-md-5 offset-md-1 d-flex align-items-stretch">
+                    <a href="#">
+                      <h4>Wiki</h4>
+                      <span class="fa fa-picture-o"></span>
+                      <p>A wiki is a knowledge base website on which users collaboratively modify and structure content directly from a web browser.</p>
+                    </a>
+                  </div>
+                  <div class="col-sm-10 col-md-5">
+                    <a href="#">
+                      <h4>MOH</h4>
+                      <span class="fa fa-leaf"></span>
+                      <p>MOH is responsible for providing information, raising health awareness and education, ensuring the accessibility of health services, and monitoring the quality of health services provided to citizens and visitors in Singapore.</p>
+                    </a>
+                  </div>
+                </div>
+            </section>
+            <div data-aos="fade-left" class="row">
+                <div class="col-sm-12">
+                    <h1 class="display-4 text-center">Smoking Area</h1>
+                </div>
+                <div class="col-sm-10 offset-md-1">
+                    <div class="iframe-container">
+                        <iframe src="https://data.gov.sg/dataset/designated-smoking-areas/resource/fdd73b5a-7350-468d-8858-333326dd7238/view/5faff7b0-0a1f-45af-ab36-6c50647d682f" frameBorder="0" allowfullscreen> </iframe>
+                    </div>
+                </div>
+            </div>
+            <form onsubmit="showalert()">
+                <div class="row">
+                    <div class="col-sm-12 text-center">
+                        <h1 class="display-4">
+                            Feedback
+                        </h1>
+                    </div>
+                    <div class="col-sm-8 offset-md-2 ">
+                        <div class="input-group">
+                            <input type="text" name="name" ng-model="name" class="form-control my-2" pattern="^[a-zA-Z]+(([',. -][a-zA-Z ])?[a-zA-Z]*)*$" placeholder="Name">
+                        </div>
+                        <div class="input-group">
+                            <input type="text" name="email" ng-model="email" class="form-control my-2" pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$" placeholder="Email">
+                        </div>
+                    </div>
+                    <div class="col-sm-8 offset-md-2">
+                        <div class="input-group">
+                            <textarea class="form-control my-2" rows="3" cols="50" placeholder="Comments"></textarea>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 text-center">
+                        <div>
+                            <button type="submit" class="btn btn-success">Submit</button>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 text-center">
+                        <div id="alertsubmit" class="alert alert-primary" style="display: none;" role="alert">
+                            Hey<strong> {{ name }}</strong>! An email will soon be sent to<strong> {{email}}</strong>.
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <footer class="my-3">
+        <div w3-include-html="/footer.html"></div>
+    </footer>
+    <!-- <div class="footer text-center my-3">
+        <p>
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This website is made by <i class="icon-heart" aria-hidden="true"></i> by <a href="https://github.com/ColdSpotYZ" target="_blank">Jason</a>
+        </p>
+    </div> -->
+    
+
+    <script>
+        AOS.init();
+        includeHTML();
+    </script>
+    <!-- Start of HubSpot Embed Code -->
+    <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/7072577.js"></script>
+    <!-- End of HubSpot Embed Code -->
+</body>
+</html>

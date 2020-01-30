@@ -1,0 +1,218 @@
+﻿@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.container{
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.centered, .centered-tips{
+    position: absolute;
+    color: white;
+    top: 40%;
+    left: 14%;
+    font-size: 4.6875vw;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.centered-tips{
+    left: 20%;
+}
+
+.jumbotron {
+    margin-top: 1.7301038062283738vh;
+}
+
+.img {
+    transition-duration: 0.4s;
+    filter: blur(5px);
+    width: 100%;
+    min-height: 40vh;
+    max-height: 80vh;
+}
+
+.img:hover {
+    transition-duration: 0.4s;
+    filter: blur(0px);
+}
+
+#pic1 {
+    background-image: url(https://www.healthhub.sg/sites/assets/Assets/Categories/Body%20Care/smoke-free-living-home.jpg?Width=970&Height=405);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 0px;
+}
+
+#pic2 {
+    background-image: url('https://www.verywellmind.com/thmb/0Vyxzo9wixE5SGHAQ1uvvy-S2C4=/768x0/filters:no_upscale():max_bytes(150000):strip_icc()/cropped-image-of-person-smoking-cigarette-636720881-57328d125f9b58723d81d0d8.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 0px;
+}
+
+#pic3 {
+    background-image: url(https://www.heart.org/-/media/aha/h4gm/article-images/quit_smoking_hands_break_cigarette.jpg?h=682&la=en&w=1024&hash=6457DB8389DEB59E8E74CEFAB2462B48B37631FC);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 0px;
+}
+
+#temp {
+    padding-left: 3.90625vw;
+    padding-right: 3.90625vw;
+}
+
+.card {
+    width: 100%;
+    height: 45vw;
+    float: left;
+    perspective: 86.50519031141869vh;
+    margin-top: 5.190311418685121vh;
+    text-align: center;
+    padding: 0px;
+}
+
+.front,
+.back {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: white;
+    color: white;
+    text-align: center;
+    font-size: 4.6875vw;
+    border-radius: 5px;
+    backface-visibility: hidden;
+    transition: 0.7s ease;
+    padding: 5px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.back {
+    background: #03446A;
+    font-size: 2vw;
+    opacity: 0;
+}
+
+.card:hover .back{
+    opacity: 1;
+}
+
+@keyframes slideInLeft {
+    from {
+        -webkit-transform: translate3d(-100%, 0, 0);
+        transform: translate3d(-100%, 0, 0);
+        visibility: visible;
+    }
+
+    to {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.card {
+    animation: slideInLeft 1.5s;
+}
+
+.front-text{
+    position: relative;
+    top: 15%;
+}
+
+.back-text {
+    position: relative;
+    top: 20%;
+    margin-left: 7.8125vw;
+    margin-right: 7.8125vw;
+}
+
+.button, .support-button{
+    background-color: #1c87c9;
+    border: none;
+    color: white;
+    padding: 2.5vw 2.65625vw;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.5625vw;
+    cursor: pointer;
+    transition-duration: 0.3s;
+}
+
+.button {
+    position: relative;
+    top: 15vw;
+    left: 0vw;
+}
+
+.support-button {
+    padding: 1.5vw 1.8vw;
+    margin-bottom: 1vw;
+}
+
+.button:hover, .support-button:hover{
+    text-decoration: none;
+    color: white;
+    transform: scale(1.05);
+    transition-duration: 0.3s;
+}
+
+.cure-tip, .cure-prevent {
+    display: grid;
+    padding: 0;
+    color: black;
+    border-width: 3px;
+    border-style: solid;
+    padding-right: 10%;
+    padding-left: 2.5%;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+    padding-bottom: 1vw;
+}
+
+.cure-tip {
+    border-image: linear-gradient( to right, #43cea2, #185a9d ) 0 0 100% 0;
+}
+
+.cure-prevent {
+    border-image: linear-gradient( to bottom, #43cea2, #185a9d ) 0 0 0 100% ;
+}
+
+.cure-tip1, .cure-prevent1{
+    margin-top: 3vw;
+}
+
+.line {
+    margin-left: 20vw;
+    margin-right: 20vw;
+    margin-top: 2.5vw;
+    margin-bottom: 1vw;
+    border-bottom: 1px solid grey;
+}
+
+.form-center{
+    margin-left: 32vw;
+    margin-bottom: 1vw;
+    margin-top: 5vw;
+}
+
+ul{
+    padding-left: 3vw;
+}
