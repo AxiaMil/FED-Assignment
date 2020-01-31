@@ -5,7 +5,7 @@ function openDetails(ID) {
 
 
 function updatelungs() {
-    document.getElementById('NoOfCigarettestyle').addEventListener("input", function () {
+    document.getElementById('calculatorSlider').addEventListener("input", function () {
         var NoOfCigarette = document.getElementById("calculatorSlider").value;
         var decimal = 1 - (NoOfCigarette * 0.01);
         var tarperyear = document.getElementById("tar-per-year").innerHTML = (NoOfCigarette * 7) + " grams"
