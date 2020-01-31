@@ -31,4 +31,9 @@
     background-color: #333;
     color: #106cff;
 } */
-
+@media(max-height: 580px)
+{
+    .nav-menu {
+        display: none !important;
+    }
+}

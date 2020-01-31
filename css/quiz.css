@@ -30,10 +30,34 @@ form{
     border: 3px solid;
     padding: 15px;
     border-radius: 20px;
+    height: fit-content;
 }
 .questions{
     font-size: 1.5vw;
 }
 input{
     padding: 15px;
+}
+.question{
+    padding: 5px;
+}
+.contact-form-btn {
+    float: left;
+    border: 0;
+    background: #6c5ce7;
+    color: #fff;
+    padding: 20px 50px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+    opacity: 1;
+}
+
+@media only screen and (max-width: 767px) {
+    .questions{
+        font-size: 5vw;
+    }
+    .heading h1{
+        font-size: 4vw;
+    }
 }

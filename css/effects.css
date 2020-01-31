@@ -104,6 +104,13 @@ html {
 #bottom {
     margin-top: 200%;
 }
+
+@media only screen and (max-height:600px) {
+    .ul {
+        display: none;
+    }
+}
+
 /* End of Side Nav Menu */
 
 .Title-Heading {
@@ -178,8 +185,6 @@ form label {
 form #Comments {
     resize: none;
     overflow: auto;
-    background: url(../media/BeNice.png) center center no-repeat;
-    background-size: auto;
     border: 2px solid black;
     border-radius: 1%;
     outline: none;
@@ -188,7 +193,6 @@ form #Comments {
     font-size: 20px;
     padding-bottom: 6%;
 }
-
 
 form .form-input-custom {
     padding: 10%;

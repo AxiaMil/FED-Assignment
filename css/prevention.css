@@ -30,26 +30,7 @@ html, body {
   opacity: 1 !important;
 }
 
-.custom-nav{
-    display: block; /* Hidden by default */
-    position: fixed; /* Fixed/sticky position */
-    top: 10%; /* Place the button at the bottom of the page */
-    left: 0; /* Place the button 30px from the right */
-    z-index: 9999; /* Make sure it does not overlap */
-    border: none; /* Remove borders */
-    outline: none; /* Remove outline */
-    color: black; /* Text color */
-    cursor: pointer; /* Add a mouse pointer on hover */
-    padding: 0; /* Some padding */
-    border-radius: 0; /* Rounded corners */
-    margin: 0;
-}
 
-.custom-nav svg{
-    padding: 0;
-    border: 0;
-    transform: translateX(-100px);
-}
 
 .custom-nav-item {
     display: block;
@@ -61,6 +42,13 @@ html, body {
 .header-container {
     background: url("https://static.businessinsider.sg/2019/04/20190404-Pixabay-Cigarette-1.jpg") no-repeat fixed center / cover;
     padding-bottom: 120vh;
+}
+@media(max-width: 700px)
+{
+  .header-container
+  {
+    background: url(https://us.123rf.com/450wm/hedgehog/hedgehog1604/hedgehog160400052/55572727-burning-cigarette-with-smoke-on-black-background.jpg?ver=6) no-repeat fixed center / cover;
+  }
 }
 
 .header-container h1 {
@@ -180,7 +168,9 @@ html, body {
     overflow: hidden;    
 
 }
-
+nav {
+  z-index: 10;
+}
 .top-content-text {
     position: absolute;
     top: 30%;

@@ -45,66 +45,103 @@
         <div class="row">
             <div class="col-sm-12">
                 <div class="content">
-                    <form class="form">
-                        <h1 class="questions">1. What is the legal age to buy cigarettes in Singapore 2020?
-                        </h1>
-                        <input type="radio" value="wrong"> 18
-                        </br>
-                        <input type="radio" value="correct"> 20
-                        </br>
-                        <input type="radio" value="wrong"> 19
-                        </br>
-                        <input type="radio" value="wrong"> 16
-                        <h1 class="questions">2. Are e-Cigarettes allowed in Singapore?
-                        </h1>
-                        <input type="radio" value="wrong"> Yes, completely.
-                        </br>
-                        <input type="radio" value="wrong"> Yes, but only to adults above legal age.
-                        </br>
-                        <input type="radio" value="correct"> No, it is compeltely banned.
-                        </br>
-                        <input type="radio" value="wrong"> No, only certified users can use.
-                        <h1 class="questions">3. How many percent of the box must text and picture health warnings fill?
-                        </h1>
-                        <input type="radio" value="correct"> 50%
-                        </br>
-                        <input type="radio" value="wrong"> 48%
-                        </br>
-                        <input type="radio" value="wrong"> 20%
-                        </br>
-                        <input type="radio" value="wrong"> 25%
-                        <h1 class="questions">4. Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, amet.
-                        </h1>
-                        <input type="radio" value="wrong"> Lorem ipsum dolor sit amet.
-                        </br>
-                        <input type="radio" value="wrong"> Lorem ipsum dolor sit amet.
-                        </br>
-                        <input type="radio" value="correct"> Lorem ipsum dolor sit amet.
-                        </br>
-                        <input type="radio" value="wrong"> Lorem ipsum dolor sit amet.
-                        <h1 class="questions">5. Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, amet.
-                        </h1>
-                        <input type="radio" value="correct"> Lorem ipsum dolor sit amet.
-                        </br>
-                        <input type="radio" value="wrong"> Lorem ipsum dolor sit amet.
-                        </br>
-                        <input type="radio" value="wrong"> Lorem ipsum dolor sit amet.
-                        </br>
-                        <input type="radio" value="wrong"> Lorem ipsum dolor sit amet.
-                    </form>
-                </div>
+                    <div class="form">
+                        <form>
+                            <div class="question col-sm-12">
+                                <div class="col-sm-8">
+                                    <h1 class="questions">1. What is the legal age to buy cigarettes in Singapore 2020?
+                                    </h1>
+                                    <input type="radio" value="wrong" name="q1"> 18
+                                    </br>
+                                    <input type="radio" value="correct" id="q1" name="q1"> 20
+                                    </br>
+                                    <input type="radio" value="wrong" name="q1"> 19
+                                    </br>
+                                    <input type="radio" value="wrong" name="q1"> 16
+                                    <div id="explain1"></div>
+                                </div>
+                                <div class="col-sm-4"></div>
+                            </div>
+                            <div class="question col-sm-12">
+                                <div class="col-sm-8">
+                                    <h1 class="questions">2. Are e-Cigarettes allowed in Singapore?
+                                    </h1>
+                                    <input type="radio" value="wrong" name="q2"> Yes, completely.
+                                    </br>
+                                    <input type="radio" value="wrong" name="q2"> Yes, but only to adults above legal
+                                    age.
+                                    </br>
+                                    <input type="radio" value="correct" id="q2" name="q2"> No, it is completely banned.
+                                    </br>
+                                    <input type="radio" value="wrong" name="q2"> No, only certified users can use.
+                                    <div id="explain2"></div>
+                                </div>
+                            </div>
+                            <div class="question col-sm-12">
+                                <div class="col-sm-8">
+                                    <h1 class="questions">3. How many percent of the box must text and picture health
+                                        warnings fill?
+                                    </h1>
+                                    <input type="radio" value="correct" id="q3" name="q3"> 50%
+                                    </br>
+                                    <input type="radio" value="wrong" name="q3"> 48%
+                                    </br>
+                                    <input type="radio" value="wrong" name="q3"> 20%
+                                    </br>
+                                    <input type="radio" value="wrong" name="q3"> 25%
+                                    <div id="explain3"></div>
+                                </div>
+                            </div>
+                            <div class="question col-sm-12">
+                                <div class="col-sm-8">
+                                    <h1 class="questions">4. Who must display warning notice?
+                                    </h1>
+                                    <input type="radio" value="wrong" name="q4"> Stores without selling license.
+                                    </br>
+                                    <input type="radio" value="wrong" name="q4"> MNC Chains (eg. 7-11).
+                                    </br>
+                                    <input type="radio" value="correct" id="q4" name="q4"> All stores.
+                                    </br>
+                                    <input type="radio" value="wrong" name="q4"> Not compulsory.
+                                    <div id="explain4"></div>
+                                </div>
+                            </div>
+                            <div class="question col-sm-12">
+                                <div class="col-sm-8">
+                                    <h1 class="questions" name="q5">5. Which of the following is correct?
+                                    </h1>
+                                    <input type="radio" value="correct" id="q5" name="q5"> No tobacco brands can
+                                    advertise on any
+                                    platform.
+                                    </br>
+                                    <input type="radio" value="wrong" name="q5"> All tobacco brands can advertise.
+                                    </br>
+                                    <input type="radio" value="wrong" name="q5"> Only licensed brands can advertise.
+                                    </br>
+                                    <input type="radio" value="wrong" name="q5"> Only local brands can advertise.
+                                    <div id="explain5"></div>
+                                </div>
+                            </div>
+                            </br>
+                            <input type="submit" class="contact-form-btn" value="Get my result!"
+                                onclick="calcScore(); return false">
+                            </br>
+                            </br>
+                            </br>
+                        </form>
+                    </div>
 
-            </div>
-        </div>
-    </div>
-    <footer>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-sm-12">
-                    <div w3-include-html="../footer.html"></div>
                 </div>
             </div>
         </div>
-    </footer>
-    <script>includeHTML();</script>
+        <footer>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div w3-include-html="../footer.html"></div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script>includeHTML();</script>
 </body>

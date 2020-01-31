@@ -1,26 +1,20 @@
-$('#Comments')
-            .focus(function () { $(this).css("background", "white") })
-            .blur(function () { if ($(this)[0].value == '') { $(this).css("background", "url(./media/BeNice.png) center center no-repeat") } })
-            .blur(function () { if ($(this)[0].value == '') { $(this).css("background-color", "white") } });
-        $('.on-click')
-            .focus(function () { $('.hidden').css("display", "") })
-            .blur(function () { $('.hidden').css("display", "none") });
+
         
-        function opensidebar() {
-            document.getElementsByClassName("hidden").style.display = ""; 
-        }
+function opensidebar() {
+    document.getElementsByClassName("hidden").style.display = ""; 
+}
 
-        function closesidebar() {
-            document.getElementsByClassName("hidden").style.hideen = "none";
-        }
+function closesidebar() {
+    document.getElementsByClassName("hidden").style.hideen = "none";
+}
 
-        function openForm() {
-          document.getElementById("myForm").style.display = "block";
-        }
+function openForm() {
+    document.getElementById("myForm").style.display = "block";
+}
 
-        function closeForm() {
-          document.getElementById("myForm").style.display = "none";
-        }
+function closeForm() {
+    document.getElementById("myForm").style.display = "none";
+}
 
 
 function formsubmit() {

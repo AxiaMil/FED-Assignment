@@ -13,6 +13,10 @@
   background: var(--yellow, #FED636);
 }
 
+* {
+  overflow: hidden;
+}
+
 html,
 body {
   height: 100%;
@@ -57,12 +61,14 @@ div {
   top: 0;
   left: 0;
   right: 0;
-  /*animation: scroll 10s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite*/
-  animation: scroll 35s linear infinite
+  /* animation: scroll 10s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite */
+  animation: scroll 35s linear infinite;
 }
-
+div:not(:hover) {
+  animation-play-state: paused;
+}
 div:hover {
-    animation-play-state: paused;
+    animation-play-state: running;
 }
 
 @keyframes scroll {

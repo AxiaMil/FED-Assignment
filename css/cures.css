@@ -27,37 +27,40 @@ html {
 .centered, .centered-tips{
     position: absolute;
     color: white;
-    top: 40%;
+    top: 15vmax;
     left: 14%;
-    font-size: 4.6875vw;
+    right: 14%;
+    display: flex;
+    justify-content: center;
+    font-size: 4.6875vmax;
     font-family: 'Montserrat', sans-serif;
 }
 
-.centered-tips{
-    left: 20%;
-    right: 20%;
+.centered-tips {
+    display: flex;
+    justify-content: center;
 }
 
 .centered-prevent {
-    left: 16%;
-    right: 16%;
+    display: flex;
+    justify-content: center;
 }
 
-.centered-help{
-    left: 23%;
-    right: 23%
+.centered-help {
+    display: flex;
+    justify-content: center;
 }
 
 .jumbotron {
-    margin-top: 1.7301038062283738vh;
+    margin-top: 1.7301038062283738vmax;
 }
 
 .img {
     transition-duration: 0.4s;
     filter: blur(5px);
     width: 100%;
-    min-height: 20vh;
-    max-height: 80vh;
+    min-height: 40vmax;
+    max-height: 40vmax;
 }
 
 .img:hover {
@@ -87,18 +90,19 @@ html {
 }
 
 #temp {
-    padding-left: 3.90625vw;
-    padding-right: 3.90625vw;
+    padding-left: 3.90625vmax;
+    padding-right: 3.90625vmax;
 }
 
 .card {
     width: 100%;
-    height: 45vw;
+    height: 45vmax;
     float: left;
-    perspective: 86.50519031141869vh;
-    margin-top: 5.190311418685121vh;
+    perspective: 86.50519031141869vmax;
+    margin-top: 2.5951557093425605vmax;
     text-align: center;
     padding: 0px;
+    margin-bottom: 2.5951557093425605vmax;
 }
 
 .front,
@@ -109,7 +113,7 @@ html {
     background: white;
     color: white;
     text-align: center;
-    font-size: 4.6875vw;
+    font-size: 4.6875vmax;
     border-radius: 5px;
     backface-visibility: hidden;
     transition: 0.7s ease;
@@ -119,7 +123,7 @@ html {
 
 .back {
     background: #03446A;
-    font-size: 2vw;
+    font-size: 2vmax;
     opacity: 0;
 }
 
@@ -146,38 +150,38 @@ html {
 
 .front-text{
     position: relative;
-    top: 15%;
+    top: 3vmax;
 }
 
 .back-text {
     position: relative;
-    top: 20%;
-    margin-left: 7.8125vw;
-    margin-right: 7.8125vw;
+    top: 8vmax;
+    margin-left: 7.8125vmax;
+    margin-right: 7.8125vmax;
 }
 
 .button, .support-button{
     background-color: #1c87c9;
     border: none;
     color: white;
-    padding: 2.5vw 2.65625vw;
+    padding: 2.5vmax 2.65625vmax;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 1.5625vw;
+    font-size: 1.5625vmax;
     cursor: pointer;
     transition-duration: 0.3s;
 }
 
 .button {
     position: relative;
-    top: 15vw;
-    left: 0vw;
+    top: 10vmax;
+    left: 0;
 }
 
 .support-button {
-    padding: 1.5vw 1.8vw;
-    margin-bottom: 1vw;
+    padding: 1.5vmax 1.8vmax;
+    margin-bottom: 1vmax;
 }
 
 .button:hover, .support-button:hover{
@@ -188,8 +192,8 @@ html {
 }
 
 .cures-help-button{
-    margin-left: 40%;
-    margin-right: 40%;
+    margin-left: 30%;
+    margin-right: 30%;
 }
 
 .cure-tip, .cure-prevent, .cure-help {
@@ -200,12 +204,12 @@ html {
     border-style: solid;
     padding-right: 4%;
     padding-left: 4%;
-    margin-left: 10vw;
-    margin-right: 10vw;
-    margin-top: 1vw;
-    margin-bottom: 1vw;
-    padding-bottom: 1vw;
-    font-size: 1.25vw;
+    margin-left: 6vmax;
+    margin-right: 6vmax;
+    margin-top: 1vmax;
+    margin-bottom: 1vmax;
+    padding-bottom: 1vmax;
+    font-size: 1.25vmax;
 }
 
 .cure-tip {
@@ -221,33 +225,27 @@ html {
 }
 
 .cure-tip1, .cure-prevent1, .cure-help1{
-    margin-top: 3vw;
+    margin-top: 3vmax;
 }
 
 .line {
-    margin-left: 20vw;
-    margin-right: 20vw;
-    margin-top: 2.5vw;
-    margin-bottom: 1vw;
+    margin-left: 20vmax;
+    margin-right: 20vmax;
+    margin-top: 2.5vmax;
+    margin-bottom: 1vmax;
     border-bottom: 1px solid grey;
 }
 
-.form-center{
-    margin-left: 32vw;
-    margin-bottom: 1vw;
-    margin-top: 5vw;
-}
-
 ul{
-    padding-left: 3vw;
+    padding-left: 3vmax;
     padding-bottom: 0;
 }
 
 .display-4{
-    font-size: 4.37vw;
+    font-size: 4.37vmax;
 }
 
-
+/*For custom nav-bar at side*/
 .ul {
     position: fixed;
     top: 50%;
@@ -255,7 +253,7 @@ ul{
     transform: translateY(-50%);
     margin: 0;
     padding: 1%;
-    z-index: 1;
+    z-index: 9999; /*Ensuring no overlap*/
 }
 
 .ul-start{
@@ -285,5 +283,25 @@ ul{
 }
 
 h1{
-    font-size: 3.5vw;
+    font-size: 3.5vmax;
+}
+
+p{
+    font-size: 1.2vmax;
+}
+
+.form-center{
+    left: 17vw;
+}
+
+.center-form{
+    margin-left: 37vw;
+}
+
+.btn1{
+    margin-bottom: 10px;
+}
+
+.btn-success{
+    border: none;
 }

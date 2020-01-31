@@ -124,7 +124,7 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     animation-delay: 1s;
-    animation: shine 1s linear infinite;
+    animation: shine 3s linear infinite;
     opacity: 1;
     border: 1px solid white;
     border-radius:8px;
@@ -1109,16 +1109,7 @@ img {
 
 }
 
-@media only screen and (max-width:550px){
-    .bodyimg1text1header1 {
-        font-size: 4.5vw;
-    }
 
-
-    .bodyimg1text1body1 {
-        font-size: 1.5vw;
-    }
-}
 
 @media only screen and (min-width: 767px) {
     .buttonhotline:hover {

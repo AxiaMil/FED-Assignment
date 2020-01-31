@@ -20,11 +20,17 @@
         display: none;
     }
 }
+#myBtn {
+    display: none;
+}
 
 @media(max-height: 655px)
 {
     .sidenav-item {
         display: none !important;
+    }
+    #myBtn {
+        display: block;
     }
 }
 
@@ -38,7 +44,6 @@
         transform: translateY(-50%);
         margin: 0;
         padding: 0;
-        z-index:
     }
 }
 @media(max-width : 768px)
@@ -50,8 +55,15 @@
 
 @media(max-height: 655px)
 {
-    .sidenav-item2 {
-        display: none !important;
+    .card-custom2 {
+        display: none ;
+    }
+}
+
+@media(max-height: 495px)
+{
+    .card-custom2 {
+        display: none;
     }
 }
 /* body {

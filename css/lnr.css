@@ -15,10 +15,6 @@ body {
 * {
     box-sizing: border-box;
 }
-.navheader{
-    z-index: 1;
-    position: fixed;
-}
 .ul {
     position: fixed;
     top: 10%;
@@ -400,6 +396,17 @@ h1 {
     .reportcontent {
         margin-top: 13%;
     }
+    .box .top img {
+        max-width: 30vw;
+        max-height: 30vh;
+    }
+    .box .mid h1{
+        font-size: 5vh;
+    }
+    .box .bot{
+        font-size: 2vh;
+    }
+    
 }
 
 

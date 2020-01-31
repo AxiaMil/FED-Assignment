@@ -22,13 +22,30 @@ html, body {
     background-size: cover;
 }
 
+.full-screen {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 .container-fluid {
     margin: 0 !important;
     padding: 0 !important;
 }
 
-@media only screen and (max-width:780) {
-    .carousel, .carousel-container, .carousel-container-container {
-        display: none !important;
+@media only screen and (max-width:700px) {
+    .carousel-item {
+        max-width: 700px;
+        max-height: 500px;
     }
 }
+
+
+@media only screen and (max-width:500px) {
+    .carousel-item {
+        margin-top: 10%;
+        max-width: 500px;
+        max-height: 400px;
+    }
+}
+
