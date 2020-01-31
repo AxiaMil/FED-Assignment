@@ -14,6 +14,10 @@ html, body {
     overflow-x: hidden;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .container{
     position: relative;
     text-align: center;
@@ -31,6 +35,17 @@ html, body {
 
 .centered-tips{
     left: 20%;
+    right: 20%;
+}
+
+.centered-prevent {
+    left: 16%;
+    right: 16%;
+}
+
+.centered-help{
+    left: 23%;
+    right: 23%
 }
 
 .jumbotron {
@@ -41,7 +56,7 @@ html, body {
     transition-duration: 0.4s;
     filter: blur(5px);
     width: 100%;
-    min-height: 40vh;
+    min-height: 20vh;
     max-height: 80vh;
 }
 
@@ -51,21 +66,21 @@ html, body {
 }
 
 #pic1 {
-    background-image: url(https://www.healthhub.sg/sites/assets/Assets/Categories/Body%20Care/smoke-free-living-home.jpg?Width=970&Height=405);
+    background-image: url("/media/smoke-free-living-home.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     min-height: 0px;
 }
 
 #pic2 {
-    background-image: url('https://www.verywellmind.com/thmb/0Vyxzo9wixE5SGHAQ1uvvy-S2C4=/768x0/filters:no_upscale():max_bytes(150000):strip_icc()/cropped-image-of-person-smoking-cigarette-636720881-57328d125f9b58723d81d0d8.jpg');
+    background-image: url("/media/cropped-image-of-person-smoking-cigarette-636720881-57328d125f9b58723d81d0d8.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 0px;
 }
 
 #pic3 {
-    background-image: url(https://www.heart.org/-/media/aha/h4gm/article-images/quit_smoking_hands_break_cigarette.jpg?h=682&la=en&w=1024&hash=6457DB8389DEB59E8E74CEFAB2462B48B37631FC);
+    background-image: url("/media/quit_smoking_hands_break_cigarette.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 0px;
@@ -172,19 +187,25 @@ html, body {
     transition-duration: 0.3s;
 }
 
-.cure-tip, .cure-prevent {
+.cures-help-button{
+    margin-left: 40%;
+    margin-right: 40%;
+}
+
+.cure-tip, .cure-prevent, .cure-help {
     display: grid;
     padding: 0;
     color: black;
     border-width: 3px;
     border-style: solid;
-    padding-right: 10%;
-    padding-left: 2.5%;
+    padding-right: 4%;
+    padding-left: 4%;
     margin-left: 10vw;
     margin-right: 10vw;
     margin-top: 1vw;
     margin-bottom: 1vw;
     padding-bottom: 1vw;
+    font-size: 1.25vw;
 }
 
 .cure-tip {
@@ -195,7 +216,11 @@ html, body {
     border-image: linear-gradient( to bottom, #43cea2, #185a9d ) 0 0 0 100% ;
 }
 
-.cure-tip1, .cure-prevent1{
+.cure-help{
+    border-style: none;
+}
+
+.cure-tip1, .cure-prevent1, .cure-help1{
     margin-top: 3vw;
 }
 
@@ -215,4 +240,50 @@ html, body {
 
 ul{
     padding-left: 3vw;
+    padding-bottom: 0;
+}
+
+.display-4{
+    font-size: 4.37vw;
+}
+
+
+.ul {
+    position: fixed;
+    top: 50%;
+    right: 30px;
+    transform: translateY(-50%);
+    margin: 0;
+    padding: 1%;
+    z-index: 1;
+}
+
+.ul-start{
+    top: 90%;
+}
+
+.ul li {
+    list-style: none;
+    margin-bottom: 10%;
+    
+}
+
+.ul li a {
+    display: block;
+    text-decoration: none;
+    height: 45px;
+    font-size: 24px;
+    margin: 4px 0;
+    padding-left: 15px;
+    line-height: 45px;
+    opacity: 0.8;
+}
+
+.ul li a:hover {
+    text-decoration: none;
+    transform: rotate(10deg)
+}
+
+h1{
+    font-size: 3.5vw;
 }

@@ -11,25 +11,40 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script src="js/include.js"></script>
     <script src="js/cures.js"></script>
-    <script src="https://kit.fontawesome.com/9c3fdd9015.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/e272d35530.js" crossorigin="anonymous"></script>
     <link href="css/cures.css" rel="stylesheet" />
     <link href="css/footer.css" rel="stylesheet" />
     <script src="js/nav-active.js"></script>
 </head>
 <body>
+    <div class="custom-nav-menu">
+        <ul class="ul nav-menu">
+            <li><a href="#habit"><span class="icon-color"><i class="fas fa-utensils"></i></span></a></li>
+            <li><a href="#distract"><span class="icon-color"><i class="fas fa-mobile-alt"></i></span></a></li>
+            <li><a href="#write"><span class="icon-color"><i class="fas fa-sticky-note"></i></span></a></li>
+            <li><a href="#crave"><span class="icon-color"><i class="fas fa-shoe-prints"></i></span></a></li>
+            <li><a href="#celebrate"><span class="icon-color"><i class="fas fa-glass-cheers"></i></span></a></li>
+            <li><a href="#help"><span class="icon-color"><i class="fas fa-info-circle"></i></span></a></li>
+        </ul>
+    </div>
+    <div class="custom-nav-menu">
+        <ul class="ul ul-start nav-menu">
+            <li><a href="#start"><span class="icon-color"><i class="fas fa-chevron-circle-up"></i></span></a></li>
+        </ul>
+    </div>
     <div class="container-fluid">
-        <div class="row">
+        <div class="row" id="start">
             <div class="col-sm-12">
                 <div w3-include-html="header.html"></div>
             </div>
         </div>
         <div class="row .container">
             <div class="col-md-12">
-                <img class="img" src="https://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/article_thumbnails/quizzes/stop_smoking_quiz/1800x1200_stop_smoking_quiz.jpg" alt="Stay Smoke-Free" />
-                <h1 class="centered-tips">How to Stay Smokefree?</h1>
+                <img class="img" src="/media/1800x1200_stop_smoking_quiz.jpg" alt="Stay Smoke-Free" />
+                <h1 class="centered-tips d-flex content-justify-center">How to Stay Smokefree?</h1>
             </div>
         </div>
-        <div class="row">
+        <div class="row" id="habit">
             <div class="col-md-12">
                 <div class="cure-tip cure-tip1">
                     <h1>Change Up Your Habits</h1>
@@ -40,7 +55,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-12" id="distract">
                 <div class="cure-tip">
                     <h1>Keep Yourself Distracted</h1>
                     <p>
@@ -49,7 +64,7 @@
                 </div>
             </div>
         </div>
-        <div class="row">
+        <div class="row" id="write">
             <div class="col-md-12">
                 <div class="cure-tip">
                     <h1>Find Out Why and Write It Down</h1>
@@ -60,7 +75,7 @@
                 </div>
             </div>
         </div>
-        <div class="row">
+        <div class="row" id="crave">
             <div class="col-md-12">
                 <div class="cure-tip">
                     <h1>Beat Cravings</h1>
@@ -70,7 +85,7 @@
                 </div>
             </div>
         </div>
-        <div class="row">
+        <div class="row" id="celebrate">
             <div class="col-md-12">
                 <div class="cure-tip">
                     <h1>Celebrate You</h1>
@@ -80,7 +95,7 @@
                 </div>
             </div>
         </div>
-        <div class="row">
+        <div class="row" id="help">
             <div class="col-md-12">
                 <div class="cure-tip">
                     <h1>Get Support</h1>

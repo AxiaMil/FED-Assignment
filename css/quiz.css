@@ -1,0 +1,39 @@
+html {
+    scroll-behavior: smooth
+}
+
+font-face {
+    font-family: roboto;
+    src: url(https://fonts.google.com/specimen/Roboto)
+}
+
+body {
+    font-family: Roboto;
+    margin: 0px;
+    overflow-x: hidden;
+}
+.heading{
+    background: #74b9ff;
+    width: 100vw;
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.heading h1{
+    font-size: 2vw;
+}
+.content{
+    padding: 10px;
+}
+form{
+    border: 3px solid;
+    padding: 15px;
+    border-radius: 20px;
+}
+.questions{
+    font-size: 1.5vw;
+}
+input{
+    padding: 15px;
+}

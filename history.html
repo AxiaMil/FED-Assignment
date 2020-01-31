@@ -15,6 +15,7 @@
     <script src="js/history.js"></script>
     <script src="js/include.js"></script>
     <script src="js/nav-active.js"></script>
+    <script src="https://kit.fontawesome.com/99abcc1c90.js" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="./css/footer.css">
     <script src="https://kit.fontawesome.com/9c3fdd9015.js" crossorigin="anonymous"><</script>
@@ -28,12 +29,17 @@
                 <div w3-include-html="header.html"></div>
             </div>
         </div>
+        <ul class="ul nav-menu">
+            <li title="How do you battle the excuses that hold you back?"><a href="#firstrow1"><i class="fas fa-question"></i></a></li>
+            <li title="How do you prepare to stop smoking?"><a href="#secondrow2"><i class="fas fa-stopwatch"></i></a></li>
+            <li title="Sign up for the iQuit 28-Day Programme!"><a href="#thirdrow3"><i class="fas fa-clipboard-list"></i></a></li>
+        </ul>
         <div class="row">
 
             <!--Banner image and respective header text-->
             <div class="col-sm-12">
                 <div class="jumbotronheader" id="jumbotronheader1">
-                    <img src="images/ljdnslkjfn.png" class="jumboimg">
+                    <img src="media/ljdnslkjfn.png" class="jumboimg">
 
                     <h1 class="jumbotrontext">What's stopping you from Quitting Smoking?</h1>
 
@@ -46,7 +52,7 @@
 
 
 
-        <div class="row grayboxcontainer elementmargin">
+        <div class="row grayboxcontainer elementmargin" id="firstrow1">
             <div class="col-md-6 elementmargin col-sm-12">
                 <div class="graybox2 headerimgcontainer">
                     <!--Container for the left banner prompting the cards-->
@@ -172,14 +178,14 @@
 
         <div class="container-fluid massdiv" style="margin-top:3vw;">
             <div class="row">
-                <div class="col-sm-12 col-md-8 massdivheader">
+                <div class="col-sm-12 col-md-8 massdivheader" id="secondrow2">
                     <!--Header for informative image-->
                     <h1 class="massdivheadertext">Prepare yourself to quit smoking</h1>
                 </div>
 
                 <div class="col-sm-12 col-md-8 massdivbody">
                     <div class="bodyimg1">
-                        <img src="../images/2-Prepare-yourself-bg.png" class="bodyimg1img">
+                        <img src="../media/2-Prepare-yourself-bg.png" class="bodyimg1img">
 
                         <div class="bodyimg1text">
                             <h1 class="bodyimg1text1header1"><a style="color:#FF0">A week</a><br /> before your quit day:</h1>
@@ -226,16 +232,30 @@
                                 <div class="formh2container">
                                     <h2 class="formh2">Calculate amount of Money Saved from Quitting Smoking!</h2>
                                 </div>
-                                <div class="savingsdiv1">
+                                <div class="savingsdiv1" id="savingsdiv2">
                                     <p class="savingsheader">Change the values below to calculate your future!</p>
                                     <label class="savingslabel">Cigarettes Smoked: </label>
                                     <input id="quantity" type="number" min="1" max="100" value="3" onchange="calculateSavings()"><p class="quantityperday"> Per Day</p>
                                     <br />
+                                    <div class="slidecontainer">
+                                        <input type="range" min="1" max="100" value="3" onchange="slider1(); " class="slider" id="quantity1">
+                                    </div>
+                                    <br />
                                     <label class="savingslabel">Pack size: </label>
-                                    <input id="packsize" type="number" min="1" max="20" value="20" onchange="calculateSavings()"><p class="quantityperday"></p>
+                                    <input id="packsize" type="number" min="1" max="20" value="10" onchange="calculateSavings()"><p class="quantityperday"></p>
+                                    <br />
+                                    <div class="slidecontainer">
+                                        <input type="range" min="1" max="20" value="10" onchange="slider2(); " class="slider" id="packsize1">
+                                    </div>
                                     <br />
                                     <label class="savingslabel">Pack cost: </label>
-                                    <input id="packcost" type="number" min="1" max="1000" value="8" onchange="calculateSavings()"><p class="quantityperday"> $</p>
+                                    <input id="packcost" type="number" min="1" max="50" value="8" onchange="calculateSavings()"><p class="quantityperday"> $</p>
+                                    <br />
+                                    <div class="slidecontainer">
+                                        <input type="range" min="1" max="50" value="8" onchange="slider3(); " class="slider" id="packcost1">
+                                    </div>
+                                    <br />
+
                                 </div>
                                 <div class="savingsdiv1">
                                     <p class="savingsheader">If you don't smoke for 30 years:</p>
@@ -250,69 +270,87 @@
                         </form>
                     </div>
 
-                    <div class="firstform">
+                    <div class="firstform" id="thirdrow3">
                         <!--Interactive form-->
-                        <form id="joinNow"
-                              onsubmit="showFinalMessage(); return false;"
-                              onreset="clearMessage()">
-                            <fieldset>
+                        <div id="joinNow">
+                            <div class="formh2containerdesc">
+                                <h2 class="formh2containerdescheader">What is the I Quit 28-Day Countdown?</h2>
+                                <p class="formh2containerdescdesc">The I Quit 28-Day Countdown programme works together with you to help you quit smoking by staying smoke-free for 28 days. You’ll be able to choose your own start date and receive daily tips to remain on track.</p>
+                            </div>
 
-                                <div class="formh2container">
-                                    <h2 class="formh2">Join the iQuit 28 Day Programme!</h2>
+                            <div class="savingsdiv1">
+                                <h1 class="savingsheader">
+                                    Get rewarded after 28 days
+                                </h1>
+                                <p class="formh2containerdescdesc2">
+                                    To further motivate you in your journey, successful quitters will also receive rewards upon validating their smoke-free status.
+                                    After the 28th day, 3rd and 6th month of your I Quit journey upon successful completion of the I Quit 28-Day Countdown, you will be able to redeem HPB e-vouchers worth $50, $30, and $20 respectively.
+                                </p>
+                                <div class="freemoneycontainer">
+                                    <img src="media/freemoney.png" />
+
                                 </div>
+                            </div>
+                            <div class="signupnowbuttoncontainer">
+                                <button type="button" class="btn btn-primary1 " data-toggle="modal" data-target="#ModalLoginForm">
+                                    Click here to Sign up now!
+                                </button>
+                            </div>
 
-                                <div class="formh2containerdesc">
-                                    <h2 class="formh2containerdescheader">What is the I Quit 28-Day Countdown?</h2>
-                                    <p class="formh2containerdescdesc">The I Quit 28-Day Countdown programme works together with you to help you quit smoking by staying smoke-free for 28 days. You’ll be able to choose your own start date and receive daily tips to remain on track.</p>
-                                </div>
-                                <div class="savingsdiv1">
-                                    <p class="savingsheader">Sign up now!</p>
-                                    <p class="savingsheadersmall">More details will arrive in your E-mail.</p>
-                                    <div class="form-group">
-                                        <label>Name</label>
-                                        <br />
-                                        <input type="text" class="form-control-lg" id="formname" placeholder="Enter your name here...">
+                            <div id="ModalLoginForm" class="modal fade">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="">Sign up now!</h1>
+                                        </div>
+                                        <div class="modal-body">
+                                            <form role="form" method="POST" action="">
+                                                <input type="hidden" name="_token" value="">
+                                                <p>More details will arrive in your E-mail.</p>
+                                                <div class="form-group">
+                                                    <label class="control-label">E-mail Address</label>
+                                                    <div>
+                                                        <input required type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" class="form-control input-lg" id="email1">
+                                                    </div>
+                                                </div>
+                                                <br />
+                                                <div class="form-group">
+                                                    <label class="control-label">Name</label>
+                                                    <div>
+                                                        <input required type="text" class="form-control input-lg" id="name1">
+                                                    </div>
+                                                </div>
+                                                <br />
+                                                <div class="confirmedtextcontainer">
+                                                    <p id="confirmedtext"></p>
 
+                                                </div>
+
+                                                <div class="form-group modalsignupbutton">
+                                                    <div>
+                                                        <input type="button" onclick="formsubmit()" class="btn btn-primary1 button1" value="Sign Up!" />
+                                                    </div>
+                                                </div>
+                                            </form>
+
+                                        </div>
                                     </div>
-
-                                    <div class="form-group emailform">
-                                        <label>Email address</label>
-                                        <br />
-                                        <input type="email" class="form-control-lg" id="formemail" aria-describedby="emailHelp" placeholder="Enter your email here...">
-
-
-
-                                    </div>
-                                    <br />
-                                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-                                    <br />
-
-                                    <button type="submit" class="form2submittext">Sign up now!</button>
-
-
                                 </div>
-                                
+                            </div>
 
 
-                                <div class="savingsdiv1">
-                                    <h1 class="savingsheader">
-                                        Get rewarded after 28 days
-                                    </h1>
-                                    <p class="formh2containerdescdesc2">
-                                        To further motivate you in your journey, successful quitters will also receive rewards upon validating their smoke-free status.
-                                        After the 28th day, 3rd and 6th month of your I Quit journey upon successful completion of the I Quit 28-Day Countdown, you will be able to redeem HPB e-vouchers worth $50, $30, and $20 respectively.
-                                    </p>
-                                    <div class="freemoneycontainer">
-                                        <img src="images/freemoney.png" />
-
-                                    </div>
-                                </div>
 
 
-                            </fieldset>
-                            <br />
-                        </form>
-                 
+
+
+                        </div>
+
+
+
+
+
+
+
                     </div>
 
 
@@ -332,8 +370,18 @@
             calculateSavings();
         </script>
         <script>
+            slider1();
+        </script>
+        <script>
+            slider2();
+        </script>
+        <script>
+            slider3();
+        </script>
+        <script>
             includeHTML();
         </script>
+
         <footer>
             <!--Include the footer-->
             <div w3-include-html="footer.html"></div>

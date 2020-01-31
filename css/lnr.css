@@ -61,7 +61,7 @@ body {
 .bg {
     width: 100%;
     height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/legislation.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/media/legislation.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -192,13 +192,14 @@ body {
 .bglaw {
     width: 100%;
     height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url(/images/5.svg);
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url(/media/5.svg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow-y: hidden;
 }
 
 .contentlaw {
@@ -217,7 +218,6 @@ body {
     padding-top: 20px;
     justify-content: center;
     align-items: center;
-    text-decoration: underline overline;
 }
 
 .contentlaw h2 p {
@@ -235,7 +235,7 @@ body {
 .bgreg {
     width: 100%;
     height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url(/images/64657283-rules-and-regulations-multicolor-concept-with-doodle-icons-around-on-white-brick-wall-background-mod.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url(/media/64657283-rules-and-regulations-multicolor-concept-with-doodle-icons-around-on-white-brick-wall-background-mod.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -259,7 +259,6 @@ body {
     padding-top: 20px;
     justify-content: center;
     align-items: center;
-    text-decoration: underline overline;
 }
 
 .contentreg h2 p {
@@ -277,7 +276,7 @@ body {
 .bgreport {
     width: 100%;
     height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url(/images/quiz-1-.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url(/media/quiz-1-.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -313,7 +312,6 @@ body {
     padding-top: 0px;
     justify-content: center;
     align-items: center;
-    text-decoration: underline overline;
 }
 
 .contact-form {

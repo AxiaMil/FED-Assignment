@@ -1,7 +1,7 @@
 /* Header */
 
 .container-custom-header {
-    background-image: url("../images/smoking_affects.jpg");
+    background-image: url("../media/smoking_affects.jpg");
 }
 
 .Website-Heading {
@@ -84,7 +84,47 @@
     font-size: 20px;
 }
 
+#NicotineCalc {
+    margin-top: 2%;
+}
 
 .Damage-Details-List {
     margin-left: 5%;
-}    
+}
+
+#tar-per-year {
+    text-align: center;
+    font-weight: 800;
+    font-family: 'Poppins', sans-serif;
+}
+
+.cigarette-question-custom {
+    font-size: 20px;
+    text-align: center;
+    font-weight: 700;
+}
+
+#NoOfCigarettestyle {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+#calculatorSlider {
+    width: 500px;
+}
+
+.lung-pattern {
+    fill: rgba(255, 255, 255, 0.3);
+}
+
+.lung-body-back {
+    fill: url(#lung_gradient);
+}
+
+.lung-body-front {
+    fill: url(#lung_pattern);
+}
+
+.lung-stem {
+    fill: #B8B8B8;
+}

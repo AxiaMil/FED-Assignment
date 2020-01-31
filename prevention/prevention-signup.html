@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Jason Chua">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Prevention</title>
+    <!--Initializing all required javscript and css modules.-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script src="/js/include.js"></script>
+    <script src="https://kit.fontawesome.com/9c3fdd9015.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/prevention.css">
+    <link rel="stylesheet" href="/css/prevention-signup.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <!-- <link rel="stylesheet" href="/css/prevention-sidebar.css"> -->
+    <script src="/js/prevention.js"></script>
+    <script src="/js/nav-active.js"></script>
+    <!-- <script src="/js/prevention-sidebar.js"></script> -->
+</head>
+<body ng-app="">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-12">
+          <div w3-include-html="/header.html"></div>
+        </div>
+      </div>
+      
+      <div class="row">
+          <div class="col-sm-12">
+            <h1 class="display-4 text-center text-secondary">Sign Up as an Ambassador!</h1>
+          </div>
+      </div>
+      <div class="row">
+        <div class="signup__container col-sm-12">
+          <div class="container__child signup__thumbnail">
+            <div class="thumbnail__content text-center">
+              <h1 class="heading--primary">Welcome to SmokeInc.</h1>
+              <h2 class="heading--secondary">Are you ready to join as an Ambassador?</h2>
+            </div>
+            <div class="thumbnail__links">
+              <ul class="list-inline m-b-0 text-center">
+                <li><a href="http://www.coldspot.wtf/" target="_blank"><i class="fa fa-globe"></i></a></li>
+                <li><a href="#" target="_blank"><fa class="fab fa-behance"></fa></a></li>
+                <li><a href="https://github.com/ColdSpotYZ" target="_blank"><i class="fab fa-github"></i></a></li>
+                <li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
+              </ul>
+            </div>
+            <div class="signup__overlay"></div>
+          </div>
+          <div class="container__child signup__form">
+            <form action="#">
+              <div class="form-group">
+                <label for="username">Username</label>
+                <input class="form-control" type="text" name="username" id="username" pattern="^[a-zA-Z]+(([',. -][a-zA-Z ])?[a-zA-Z]*)*$" placeholder="Username" title="Please enter a name without special characters" required />
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input class="form-control" type="text" name="email" id="email" pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$" placeholder="Email" title="Enter an email in the format example@example.com" required />
+              </div>
+              <div class="form-group">
+                <label for="password">Password</label>
+                <input class="form-control" type="password" name="password" id="password" placeholder="********" required />
+              </div>
+              <div class="form-group">
+                <label for="passwordRepeat">Repeat Password</label>
+                <input class="form-control" type="password" name="passwordRepeat" id="passwordRepeat" placeholder="********" required />
+              </div>
+              <div class="m-t-lg">
+                <ul class="list-inline">
+                  <li>
+                    <input class="btn btn--form" type="submit" value="Register" />
+                  </li>
+                  <li>
+                    <a class="signup__link" href="#">I am already a member</a>
+                  </li>
+                </ul>
+              </div>
+            </form>  
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+  <footer class="my-3">
+      <div w3-include-html="/footer.html"></div>
+  </footer>
+
+  <script>
+    AOS.init();
+    includeHTML();
+</script>
+    <!-- Start of HubSpot Embed Code -->
+  <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/7072577.js"></script>
+  <!-- End of HubSpot Embed Code -->
+</body>
+</html>

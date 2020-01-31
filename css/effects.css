@@ -178,7 +178,7 @@ form label {
 form #Comments {
     resize: none;
     overflow: auto;
-    background: url(../images/BeNice.png) center center no-repeat;
+    background: url(../media/BeNice.png) center center no-repeat;
     background-size: auto;
     border: 2px solid black;
     border-radius: 1%;

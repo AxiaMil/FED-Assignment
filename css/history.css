@@ -3,6 +3,10 @@
     
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 /* Set a background color */
 body {
     background-color: white;
@@ -19,16 +23,14 @@ body {
 .massdivheader {
     background-color: #afb3cf;
     /*darker gray*/
-    margin: 0 auto;
-    width: 80%;
+    
     text-align: center;
 }
 
 .massdivbody {
     background-color: #afb3cf;
     /*darker gray*/
-    margin: 0 auto;
-    width: 80%;
+    
     padding-bottom: 1vw;
     
 }
@@ -42,7 +44,7 @@ body {
 }
 
 .bodyimg1 {
-    background-image: url("../images/2-Prepare-yourself-bg.png");
+    background-image: url("../media/2-Prepare-yourself-bg.png");
     background-repeat: no-repeat;
     background-size:contain;
     border-radius:8px;
@@ -329,7 +331,7 @@ img {
     
     margin-top: 1vw;
     color: white;
-    background-image: url("../images/ljdnslkjfn.png");
+    background-image: url("../media/ljdnslkjfn.png");
     background-repeat: no-repeat;
     border-radius: 8px;
     background-size:contain;
@@ -691,9 +693,12 @@ img {
 }
 .btn {
     font-size: 1.5rem;
-    background: transparent;
+    background: #ff9600;
 
 }
+
+
+
 
 .faqaccordion {
     margin: 0 auto;
@@ -715,22 +720,19 @@ img {
 
 
 .description2 {
-    text-align: center;
-    width: 80%;
-    margin: 0 auto;
+    text-align: center;   
     padding-top: 1vw;
     padding-bottom: 1vw;
 }
 
 #accordionE {
-    line-height: 1.5vw;
+    /*line-height: 1.5vw;*/
 }
 
 
 .faqcontent {
     background-color: #afb3cf;
-    width: 80%;
-    margin: 0 auto;
+    
     padding-top: 1vw;
     padding-bottom: 0.5vw;
 }
@@ -770,8 +772,16 @@ img {
 
 .formh2containerdescdesc {
     color:white;
-    border: 1px solid white;
 }
+
+.signupnowbuttoncontainer{
+    width: 80%;
+    text-align:center;
+    margin: 0 auto;
+    padding:1vw;
+}
+
+
 
 
 .quantityperday {
@@ -829,6 +839,40 @@ img {
     padding-bottom: 1vw;
 }
 
+.modalsignupbutton{
+    float:right;
+}
+
+.btn-primary1:hover {
+    background: linear-gradient(270deg, #ff9600, #ffc87b);
+    background-size: 400% 400%;
+    animation: btnanimation 3s ease infinite;
+    opacity: 1;
+    color: white;
+}
+
+@keyframes btnanimation {
+    0% {
+        background-position: 0% 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+.btn2{
+    background: transparent;
+}
+
+.button1:hover{
+    color: aquamarine;
+}
+
 .iquitbuttons{
     margin-top:0.5vw;
 }
@@ -873,6 +917,87 @@ img {
     background-color: #cbcbcb
 }
 
+.ul {
+    position: fixed;
+    top: 10%;
+    right: 15px;
+    transform: translateY(50%);
+    margin: 0;
+    padding: 1vw;
+    z-index: 1;
+}
+
+    .ul li {
+        list-style: none;
+    }
+
+        .ul li a {
+            display: block;
+            text-decoration: none;
+            height: 45px;
+            font-size: 24px;
+            color: #ff9600;
+            margin: 4px 0;
+            padding-left: 15px;
+            line-height: 45px;
+            opacity: 0.7;
+        }
+
+            .ul li a:hover {
+                text-decoration: none;
+                color: #Fff;
+                transform: rotate(10deg)
+            }
+
+
+.confirmedtextcontainer{
+    background-color: #ff9600;
+    opacity: 0.5;
+    border-radius:8px;
+    text-align:center;
+}
+
+#confirmedtext{
+    opacity: 1;
+
+}
+
+.slidecontainer {
+    width: 100%; /* Width of the outside container */
+}
+
+/* The slider itself */
+.slider {
+    -webkit-appearance: none; /* Override default CSS styles */
+    appearance: none;
+    width: 100%; /* Full-width */
+    height: 25px; /* Specified height */
+    background: #d3d3d3; /* Grey background */
+    outline: none; /* Remove outline */
+    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+    border-radius:8px;
+}
+
+    /* Mouse-over effects */
+    .slider:hover {
+        opacity: 1; /* Fully shown on mouse-over */
+    }
+
+    /* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+    .slider::-webkit-slider-thumb {
+        -webkit-appearance: none; /* Override default look */
+        appearance: none;
+        border-radius: 50%;
+        width: 25px; /* Set a specific slider handle width */
+        height: 25px; /* Slider handle height */
+        background: #ff9600; /* Green background */
+        cursor: pointer; /* Cursor on hover */
+    }
+
+
+
 /* If the screen size is 768px wide or less, set the font-size appropriately */
 @media only screen and (max-width: 767px) {
     .flip-card-front1-text, .flip-card-front3-text, .flip-card-front4-text, .headerimgtext2text {
@@ -899,9 +1024,10 @@ img {
     }
 
     .buttonhotline{
-        width:12vw;
-        height:12vw;
-        border-radius:8vw;
+        width:20vw;
+        height:20vw;
+        border-radius:50%;
+        font-size:2vw;
     }
 
     .description2text {
@@ -929,7 +1055,7 @@ img {
     }
 
     .card-body{
-        font-size:1.5vw;
+        font-size:3vw;
     }
 
     .formh2 {
@@ -1014,5 +1140,28 @@ img {
         animation: slideInUp 2s;
     }
 
+    .description2 {
+        width: 80%;
+        margin: 0 auto;
+        
+    }
+
+    .faqcontent {
+        width: 80%;
+        margin: 0 auto;
+        
+    }
+
+    .massdivheader {
+      
+        margin: 0 auto;
+        width: 80%;
+    }
+
+    .massdivbody {
+        
+        margin: 0 auto;
+        width: 80%;
+    }
 
 }

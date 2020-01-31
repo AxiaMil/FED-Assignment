@@ -7,9 +7,13 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Main Page</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/jquery.slim.min.js"></script>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script src="js/include.js"></script>
+    <link href="css/index.css" rel="stylesheet" />
+    <link href="css/footer.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/9c3fdd9015.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="container-fluid">
@@ -19,47 +23,58 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-sm-12">
-                <div class="jumbotron">
-                    <h1 class="display-3">Mosquitoes</h1>
-                    <p class="lead">
-                        Aenean hendrerit, felis sed faucibus cursus, lorem ligula rutrum libero, in porttitor ipsum arcu tincidunt urna. Ut iaculis rutrum leo, porta accumsan ipsum efficitur vel.Nunc volutpat tempor condimentum. Maecenas diam enim, posuere vehicula faucibus a, rutrum euismod lectus. Pellentesque at sodales massa. Suspendisse potenti. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et feugiat ex, sit amet molestie lorem. Fusce malesuada dolor sem, viverra maximus justo euismod non. Donec porta odio eget eros dictum fringilla. Pellentesque egestas a eros at tempus.
-                    </p>
-                    <p class="lead">
-                        <a class="btn btn-primary btn-lg" href="#" role="button">Contacts</a>
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-8 offset-2">
-                <div id="carouselFadeExampleIndicators" class="carousel slide carousel-fade" data-ride="carousel">
+            <div class="col-sm-12 carousel-container-container">
+                <div id="carouselExampleIndicators" class="carousel-container carousel slide" data-ride="carousel">
                     <ol class="carousel-indicators">
-                        <li data-target="#carouselIndicators" data-slide-to="0" class="active"></li>
-                        <li data-target="#carouselIndicators" data-slide-to="1"></li>
-                      </ol>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                    </ol>
                     <div class="carousel-inner" role="listbox">
-                        <div class="carousel-item active">
-                            <div class="embed-responsive embed-responsive-16by9">
-                                <video src="https://www.youtube.com/embed/48OJbbI0DfE" allowfullscreen></video>
+                        <!-- Slide One - Set the background image for this slide in the line below -->
+                        <div class="carousel-item active" style="background-image: url('media/smoking3.jpg')">
+                            <div class="carousel-caption d-none d-md-block">
+
                             </div>
                         </div>
-                        <div class="carousel-item active">
-                            <img class="d-block w-100" src="https://ichef.bbci.co.uk/wwfeatures/live/976_549/images/live/p0/73/ck/p073ck22.jpg" alt="Mosquito">
+                        <!-- Slide Two - Set the background image for this slide in the line below -->
+                        <div class="carousel-item" style="background-image: url('media/smoking2.jpg')">
+                            <div class="carousel-caption d-none d-md-block">
+
+                            </div>
+                        </div>
+                        <!-- Slide Three - Set the background image for this slide in the line below -->
+                        <div class="carousel-item" style="background-image: url('media/smoking4.jpg')">
+                            <div class="carousel-caption d-none d-md-block">
+
+                            </div>
+                        </div>
+                        <div class="carousel-item" style="background-image: url('media/smoking1.jpg')">
+                            <div class="carousel-caption d-none d-md-block">
+
+                            </div>
                         </div>
                     </div>
-                    <a class="carousel-control-prev" href="#carouselIndicators" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
                     </a>
-                    <a class="carousel-control-next" href="#carouselIndicators" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
                     </a>
                 </div>
             </div>
         </div>
     </div>
+    
+        
+    
+
+    <footer>
+        <div w3-include-html="footer.html"></div>
+    </footer>
     <script>
         includeHTML();
     </script>

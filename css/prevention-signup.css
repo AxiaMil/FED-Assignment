@@ -10,14 +10,8 @@ body {
   }
   
   .signup__container {
-    position: absolute;
-    top: 60%;
-    right: 0;
-    left: 0;
     margin-right: auto;
     margin-left: auto;
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
     overflow: hidden;
     display: -webkit-box;
     display: flex;
@@ -25,8 +19,8 @@ body {
             align-items: center;
     -webkit-box-pack: center;
             justify-content: center;
-    width: 50rem;
-    height: 30rem;
+    width: 100vw;
+    height: 80vh;
     border-radius: 0.1875rem;
     box-shadow: 0px 0.1875rem 0.4375rem rgba(0, 0, 0, 0.25);
   }
@@ -54,7 +48,7 @@ body {
     flex-wrap: wrap;
     -webkit-box-align: center;
             align-items: center;
-    background: url(http://ultraimg.com/images/spectre-login.jpg);
+    background: url(https://www.washingtonpost.com/resizer/qk01cey0ejOIarnURWccyF66QT0=/1440x0/smart/arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/HCPHBE5NX465ZMAGMGWYDD45BI.jpg);
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover;

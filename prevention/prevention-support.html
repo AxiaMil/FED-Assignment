@@ -25,36 +25,39 @@
     <script src="https://kit.fontawesome.com/9c3fdd9015.js" crossorigin="anonymous"></script>
     <script src="/js/prevention.js"></script>
     <script src="/js/prevention-steps.js"></script>
+    <script src="/js/prevention-support.js"></script>
 </head>
 <body>
-    <div class="loader">
-        <div class="load">
-            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="margin: auto; display: block; shape-rendering: auto;" width="191px" height="191px" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid">
-                <path fill="none" stroke="#e90c59" stroke-width="8" stroke-dasharray="42.76482137044271 42.76482137044271" d="M24.3 30C11.4 30 5 43.3 5 50s6.4 20 19.3 20c19.3 0 32.1-40 51.4-40 C88.6 30 95 43.3 95 50s-6.4 20-19.3 20C56.4 70 43.6 30 24.3 30z" stroke-linecap="round" style="transform:scale(0.8);transform-origin:50px 50px">
-                  <animate attributeName="stroke-dashoffset" repeatCount="indefinite" dur="4.166666666666667s" keyTimes="0;1" values="0;256.58892822265625"></animate>
-                </path>
-            </svg>
-        </div>
-    </div>
+    
     <ul class="ul nav-menu" id="navigation">
-        <li class="sidenav-item"><a href="#quitpage"><i class="fa fa-ban"></i></a></li>
-        <li class="sidenav-item"><a href="#nrtpage"><i class="fa fa-medkit" aria-hidden="true"></i></a></li>
-        <li class="sidenav-item"><a href="#nonnrtpage"><i class="fa fa-heart" aria-hidden="true"></i></a></li>
-        <li class="sidenav-item"><a href="#supportpage"><i class="fa fa-users" aria-hidden="true"></i></a></li>
-        <li class="sidenav-item"><a href="#alternativepage"><i class="fa fa-refresh" aria-hidden="true"></i></a></li>
-        <li class="sidenav-item"><a href="#quitpage"><i class="fa fa-ban"></i></a></li>
-        <li class="sidenav-item"><a href="#nrtpage"><i class="fa fa-medkit" aria-hidden="true"></i></a></li>
-        <li class="sidenav-item"><a href="#nonnrtpage"><i class="fa fa-heart" aria-hidden="true"></i></a></li>
-        <li class="sidenav-item"><a href="#supportpage"><i class="fa fa-users" aria-hidden="true"></i></a></li>
-        <li class="sidenav-item"><a href="#alternativepage"><i class="fa fa-refresh" aria-hidden="true"></i></a></li>
+        <li class="sidenav-item"><a href="#1"><i class="fa">1</i></a></li>
+        <li class="sidenav-item"><a href="#2"><i class="fa">2</i></a></li>
+        <li class="sidenav-item"><a href="#3"><i class="fa">3</i></a></li>
+        <li class="sidenav-item"><a href="#4"><i class="fa">4</i></a></li>
+        <li class="sidenav-item"><a href="#5"><i class="fa">5</i></a></li>
+        <li class="sidenav-item"><a href="#6"><i class="fa">6</i></a></li>
+        <li class="sidenav-item"><a href="#7"><i class="fa">7</i></a></li>
+        <li class="sidenav-item"><a href="#8"><i class="fa">8</i></a></li>
+        <li class="sidenav-item"><a href="#9"><i class="fa">9</i></a></li>
+        <li class="sidenav-item"><a href="#10"><i class="fa">10</i></a></li>
     </ul>   
     <div class="card-custom">
         <div class="card">
             <h5 class="card-header">
-                Quote of the Day
+                Quote of the session
             </h5>
             <div class="card-body">
-            <p class="card-text">“Each person must live their life as a model for others.” - Rosa Parks</p>
+            <p class="card-text" id="card-custom-text"></p>
+            </div>
+        </div>
+    </div>
+    <div class="card-custom2">
+        <div class="card">
+            <h5 class="card-header">
+                Quote of the session
+            </h5>
+            <div class="card-body">
+            <p class="card-text" id="card-custom-text2"></p>
             </div>
         </div>
     </div>
@@ -65,7 +68,6 @@
                 <div w3-include-html="/header.html"></div>
             </div>
         </div>
-        <div w3-include-html="prevention-header.html" class="sticky-top"></div>
     </div>
     <div class="container">
         <div data-aos="fade-left" class="row">
@@ -78,7 +80,7 @@
             </div>
         </div>
     <div data-aos="fade-left" class="row d-flex align-items-stretch">
-        <div class="col-sm-8 section-custom text-center">
+        <div class="col-sm-8 section-custom text-center" id="1">
             <h1 class="display-5">
                 Set a good example
             </h1>
@@ -91,8 +93,8 @@
         <div class="d-sm-none d-md-block col-md-3 offset-md-1">
         </div>
     </div>
-    <div data-aos="fade-left" class="row ">
-        <div class="col-sm-8 section-custom text-center">
+    <div data-aos="fade-left" class="row">
+        <div class="col-sm-8 section-custom text-center" id="2"> 
             <h1 class="display-5">
                 Understand the attraction
             </h1>
@@ -106,7 +108,7 @@
         </div>
     </div>
     <div data-aos="fade-left" class="row">
-        <div class="col-sm-8 section-custom text-center">
+        <div class="col-sm-8 section-custom text-center" id="3">
             <h1 class="display-5">
                 Say no
             </h1>
@@ -116,7 +118,7 @@
         </div>
     </div>
     <div data-aos="fade-left" class="row">
-        <div class="col-sm-8 section-custom text-center">
+        <div class="col-sm-8 section-custom text-center" id="4">
             <h1 class="display-5">
                 Understand the attraction
             </h1>
@@ -130,7 +132,7 @@
         </div>
     </div>
     <div data-aos="fade-left" class="row">
-        <div class="col-sm-8 section-custom text-center">
+        <div class="col-sm-8 section-custom text-center" id="5">
             <h1 class="display-5">
                 Appeal to teen's vanity
             </h1>
@@ -140,7 +142,7 @@
         </div>
     </div>
     <div data-aos="fade-left" class="row">
-        <div class="col-sm-8 section-custom text-center">
+        <div class="col-sm-8 section-custom text-center" id="6">
             <h1 class="display-5">
                 Do the math
             </h1>
@@ -150,7 +152,7 @@
         </div>
     </div>
     <div data-aos="fade-left" class="row">
-        <div class="col-sm-8 section-custom text-center">
+        <div class="col-sm-8 section-custom text-center" id="7">
             <h1 class="display-5">
                 Expect peer pressure
             </h1>
@@ -160,7 +162,7 @@
         </div>
     </div>
     <div data-aos="fade-left" class="row">
-        <div class="col-sm-8 section-custom text-center">
+        <div class="col-sm-8 section-custom text-center" id="8">
             <h1 class="display-5">
                 Take addiction seriously
             </h1>
@@ -170,7 +172,7 @@
         </div>
     </div>
     <div data-aos="fade-left" class="row">
-        <div class="col-sm-8 section-custom text-center">
+        <div class="col-sm-8 section-custom text-center" id="9">
             <h1 class="display-5">
                 Consider the future
             </h1>
@@ -180,7 +182,7 @@
         </div>
     </div>
     <div data-aos="fade-left" class="row">
-        <div class="col-sm-8 section-custom text-center">
+        <div class="col-sm-8 section-custom text-center" id="10">
             <h1 class="display-5">
                 Get involved
             </h1>
