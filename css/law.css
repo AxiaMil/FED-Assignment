@@ -107,13 +107,13 @@ header{
     padding-bottom: 10vh;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 767px) {
     .bgf{
         height: fit-content;
         padding: 15px;
     }
     .bgf h1{
-        font-size: 1.8vw;
+        font-size: 5vw;
         padding-left: 1vw;
         display: flex;
         flex-wrap: wrap;
@@ -121,8 +121,5 @@ header{
     .decrease1{
         max-width: 50vw;
         overflow-wrap: break-word;
-    }
-    ul li{
-        font-size: 1vw;
     }
 }

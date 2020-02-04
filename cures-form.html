@@ -23,7 +23,7 @@
                 <div w3-include-html="header.html"></div>
             </div>
         </div>
-        <form onsubmit="getHelpPls(); homePage()">
+        <form>
             <div class="row">
                 <div class="col-sm-12 text-center">
                     <h1 class="display-3">
@@ -40,18 +40,16 @@
                 </div>
                 <div class="col-sm-8 offset-md-2">
                     <div class="input-group">
-                        <textarea class="form-control my-2" rows="5" cols="50" placeholder="Comments" required></textarea>
+                        <textarea class="form-control my-2" rows="5" cols="50" placeholder="Comments"></textarea>
                     </div>
-                </div>
-
-            </div>
-            <div class="col-sm-12 text-center">
-                <div>
-                    <button type="submit" class="btn btn-success btn1">Submit</button>
                 </div>
             </div>
         </form>
-        
+        <div class="col-sm-12 text-center">
+            <div>
+                <button type="submit" class="btn btn-success btn1" onclick="getHelpPls()">Submit</button>
+            </div>
+        </div>
     </div>
     <footer>
         <div class="container-fluid">
