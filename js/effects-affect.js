@@ -3,7 +3,6 @@ function openDetails(ID) {
     document.getElementById(ID).open = true;
 }
 
-
 function updatelungs() {
     document.getElementById('calculatorSlider').addEventListener("input", function () {
         var NoOfCigarette = document.getElementById("calculatorSlider").value;
@@ -13,6 +12,8 @@ function updatelungs() {
         document.getElementById("NoOfCigarettestyle").value = NoOfCigarette;
     });
 }
+
+
 
 
 function updatelungs1() {
