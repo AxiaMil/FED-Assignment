@@ -13,6 +13,9 @@ function getHelpPls() {
     }
     if (check == true) {
         alert("Hi " + name + ", an email will be sent to " + email + " within 3-5 working days. Your comments will be noted down by our staff. ");
-        window.location.replace("/cures.html");
     }
+}
+
+function homePage() {
+    window.location.replace("/cures.html");
 }

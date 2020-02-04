@@ -149,6 +149,20 @@ body {
   .btn--form:focus, .btn--form:hover {
     background: #323232;
   }
+
+  @media(max-width: 520px)
+  {
+    .thumbnail__links {
+      display: none;
+    }
+
+    .signup__thumbnail {
+      display: none;
+    }
+    .signup__form {
+      width: 100vw;
+    }
+  }
   
   .signup__link {
     font-size: .8rem;

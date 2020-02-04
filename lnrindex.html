@@ -228,8 +228,8 @@
                         <h1>Report</h1>
                     </div>
                     <div class="reportcontent">
-                        <form class="content-form">
-                            <input type="text" class="contact-form-text" placeholder="Your name" id="name" required>
+                        <form class="content-form" onsubmit="thankyou()"">
+                            <input type=" text" class="contact-form-text" placeholder="Your name" id="name" required>
                             <input type="email" class="contact-form-text" placeholder="Your email" required>
                             <input type="text" class="contact-form-text" placeholder="Your mobile number"
                                 pattern="^[89]\d{7}" required>
@@ -246,7 +246,7 @@
                                     style="display: none;">
                                 <label for="files" class="contact-form-text" id="fileplace">Upload relevant
                                     documents</label>
-                                <input type="submit" class="contact-form-btn" value="Report" onclick="thankyou()">
+                                <input type="submit" class="contact-form-btn" value="Report">
                         </form>
                     </div>
                 </div>
